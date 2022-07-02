@@ -32,4 +32,24 @@ class Resume
         //logic to search resume goes here
   
     }
+
+    /**
+     * Get the value of yearsOfExperience
+     */ 
+    public function getYearsOfExperience()
+    {
+        return $this->yearsOfExperience;
+    }
+
+    /**
+     * Set the value of yearsOfExperience
+     *
+     * @return  self
+     */ 
+    public function setYearsOfExperience($yearsOfExperience)
+    {
+        $this->yearsOfExperience = $yearsOfExperience;
+
+        return $this;
+    }
 }
