@@ -1,0 +1,28 @@
+{
+    "name": "sam/php_test",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sam\\": "src/"
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "smachara",
+            "email": "smachara@gmail.com"
+        }
+    ],
+    "require": {},
+    
+    "scripts": {
+        "test"  : [ 
+            "vendor\\bin\\phpunit --color tests" 
+        ],
+        "start" : [ 
+            "php -S localhost:8000" 
+        ]
+    }
+}
