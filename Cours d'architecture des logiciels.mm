@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1656421382834" ID="ID_112978228" MODIFIED="1656421397970" TEXT="Cours d&apos;architecture des logiciels (&quot;Software architecture&quot;)">
 <node COLOR="#006633" CREATED="1656421406737" ID="ID_504367584" MODIFIED="1656453295893" POSITION="right" TEXT="Principes ">
-<node CREATED="1656453304249" HGAP="29" ID="ID_233729836" MODIFIED="1656490000762" TEXT="UML" VSHIFT="-56">
+<node CREATED="1656453304249" HGAP="29" ID="ID_233729836" MODIFIED="1656801685907" TEXT="UML" VSHIFT="-56">
 <node CREATED="1656453800565" ID="ID_1913360451" MODIFIED="1656487969598" TEXT="Qu&apos;est-ce UML ?">
 <node CREATED="1656490102683" ID="ID_578438764" MODIFIED="1656490106076" TEXT="diagramme UML (Unified Modeling Language) fournit une repr&#xe9;sentation visuelle d&apos;un aspect d&apos;un syst&#xe8;me. Les diagrammes UML illustrent les aspects quantifiables d&apos;un syst&#xe8;me qui peuvent &#xea;tre d&#xe9;crits visuellement, tels que les relations, le comportement, la structure ou la fonctionnalit&#xe9;."/>
 </node>
@@ -38,7 +38,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#669900" CREATED="1656421960863" ID="ID_1232988568" MODIFIED="1656422812720" TEXT="Principes SOLID : qu&apos;est-ce que c&apos;est ?">
+<node COLOR="#669900" CREATED="1656421960863" FOLDED="true" HGAP="110" ID="ID_1232988568" MODIFIED="1656801709784" TEXT="Principes SOLID : qu&apos;est-ce que c&apos;est ?" VSHIFT="-2">
 <node CREATED="1656422157768" ID="ID_1205067346" MODIFIED="1656422610320" TEXT="Ce sont des principes ou des conventions largement accept&#xe9; dans l&apos;industrie pour la conception de programmes informatiques.        "/>
 <node CREATED="1656422746267" ID="ID_1211275861" MODIFIED="1656422760288" TEXT="Ils ont comme objectif de rendre le code ">
 <node CREATED="1656422761826" ID="ID_1095923546" MODIFIED="1656422771339" TEXT="plus facile &#xe0; maintenir"/>
@@ -57,9 +57,9 @@
 </node>
 </node>
 <node CREATED="1656421900745" HGAP="75" ID="ID_1472757106" MODIFIED="1656423930264" TEXT="" VSHIFT="41">
-<node CREATED="1656421472713" ID="ID_363307184" MODIFIED="1656421548810" TEXT="S">
+<node CREATED="1656421472713" ID="ID_363307184" MODIFIED="1656801711641" TEXT="S">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1656421502878" HGAP="27" ID="ID_135457261" MODIFIED="1656677484361" TEXT="Single Responsqbility Principle (SRP) " VSHIFT="6"/>
+<node CREATED="1656421502878" HGAP="14" ID="ID_135457261" MODIFIED="1656801726614" TEXT="Single Responsqbility Principle (SRP) " VSHIFT="9"/>
 <node CREATED="1656421606251" ID="ID_669800657" MODIFIED="1656677477076" TEXT="Le principe de responsabilit&#xe9; unique ">
 <node CREATED="1656491130448" ID="ID_1996788455" MODIFIED="1656491205133" TEXT="L&apos;id&#xe9;e derri&#xe8;re le SRP est que chaque classe, module ou fonction d&apos;un programme doit avoir une responsabilit&#xe9;/un objectif dans le programme."/>
 <node CREATED="1656491300105" ID="ID_124478110" MODIFIED="1656491322594" TEXT="&quot;Chaque classe ne doit avoir qu&apos;une seule raison de changer&quot;">
@@ -99,13 +99,13 @@
 </node>
 </node>
 </node>
-<node CREATED="1656792663399" ID="ID_1768298424" MODIFIED="1656795062426" TEXT="&#xd83e;&#xddff;">
+<node CREATED="1656792663399" HGAP="45" ID="ID_1768298424" MODIFIED="1656801787091" TEXT="&#xd83e;&#xddff;" VSHIFT="-42">
 <icon BUILTIN="bookmark"/>
 <node CREATED="1656793191977" ID="ID_65283707" MODIFIED="1656793191977" TEXT="Haut niveau de coh&#xe9;sion et de robustesse."/>
 <node CREATED="1656793191977" ID="ID_524572270" MODIFIED="1656793191977" TEXT="Favoriser la composition de classes (injecter des composants)"/>
 <node CREATED="1656793191977" ID="ID_825947606" MODIFIED="1656793191977" TEXT="&#xc9;viter la duplication du code"/>
 </node>
-<node CREATED="1656797516282" ID="ID_1857461594" MODIFIED="1656797516282" TEXT="">
+<node CREATED="1656797516282" HGAP="63" ID="ID_1857461594" MODIFIED="1656801769466" TEXT="" VSHIFT="-7">
 <node CREATED="1656797533141" ID="ID_1588395520" MODIFIED="1656797706267" TEXT="Test simplifi&#xe9;">
 <node CREATED="1656797533141" ID="ID_631317581" MODIFIED="1656797533141" TEXT="Une classe avec une seule responsabilit&#xe9; aura beaucoup moins de cas de test, ce qui permet de r&#xe9;duire les efforts de test."/>
 </node>
@@ -122,12 +122,15 @@
 <node CREATED="1656797533165" ID="ID_1722404583" MODIFIED="1656797533165" TEXT="En vous assurant que vos classes n&apos;ont qu&apos;une seule responsabilit&#xe9;, vous pouvez &#xe9;conomiser beaucoup d&apos;efforts dans le d&#xe9;veloppement de l&apos;application et cr&#xe9;er une architecture plus facile &#xe0; maintenir."/>
 </node>
 </node>
-<node CREATED="1656796688564" ID="ID_1635226635" MODIFIED="1656796693628" TEXT="Example">
+<node CREATED="1656796688564" ID="ID_1635226635" MODIFIED="1656803406826" TEXT="Example">
+<node CREATED="1656803417452" ID="ID_1742995989" MODIFIED="1656803424807" TEXT="Supposons que nous &#xe9;crivions une application php pour un cabinet de conseil en recrutement. Nous allons cr&#xe9;er une classe Resume qui permet au consultant d&apos;obtenir et de d&#xe9;finir la technologie et les ann&#xe9;es d&apos;exp&#xe9;rience dans chaque CV, et de rechercher le r&#xe9;sum&#xe9; &#xe0; partir de la base de donn&#xe9;es."/>
 <node CREATED="1656797867303" ID="ID_601929961" MODIFIED="1656797869940" TEXT="">
 <icon BUILTIN="button_cancel"/>
+<node CREATED="1656805948687" ID="ID_1548558268" LINK="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SPR-Step1/solid_examples/src/SingleResponsabilityPrinciple" MODIFIED="1656805948687" TEXT="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SPR-Step1/solid_examples/src/SingleResponsabilityPrinciple"/>
 </node>
 <node CREATED="1656797871227" ID="ID_147820325" MODIFIED="1656797872696" TEXT="">
 <icon BUILTIN="button_ok"/>
+<node CREATED="1656805987927" ID="ID_1757663163" LINK="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SRP-Step2/solid_examples/src/SingleResponsabilityPrinciple" MODIFIED="1656805987927" TEXT="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SRP-Step2/solid_examples/src/SingleResponsabilityPrinciple"/>
 </node>
 </node>
 </node>
@@ -226,7 +229,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1656423925383" ID="ID_1779877565" MODIFIED="1656488935663" POSITION="right" TEXT="Reference:">
+<node CREATED="1656423925383" FOLDED="true" ID="ID_1779877565" MODIFIED="1656801637164" POSITION="right" TEXT="Reference:">
 <node CREATED="1656447449367" ID="ID_1592664775" MODIFIED="1656801431897">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -248,9 +251,7 @@
 </node>
 <node CREATED="1656489192396" ID="ID_1883859193" LINK="resources/coursUML.pdf" MODIFIED="1656801539766" TEXT="Cours UML"/>
 </node>
-<node CREATED="1656421883423" ID="ID_1916036870" MODIFIED="1656421883423" POSITION="right" TEXT=""/>
-<node CREATED="1656421873616" ID="ID_648204993" MODIFIED="1656421873616" POSITION="right" TEXT=""/>
-<node CREATED="1656421792198" ID="ID_884377382" MODIFIED="1656421826510" POSITION="left" TEXT="Conventions de conception de logiciels "/>
+<node CREATED="1656421792198" ID="ID_884377382" MODIFIED="1656803415447" POSITION="left" TEXT="+"/>
 <node CREATED="1656421796608" ID="ID_1416325259" MODIFIED="1656421796608" POSITION="left" TEXT=""/>
 </node>
 </map>
