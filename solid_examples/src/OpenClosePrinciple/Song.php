@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Sam\OpenClosePrinciple;
 
-final class Song {
+final class Song implements Measurable {
     private float $totalLength;
     private float $sentLength;
-  
-    public function  getSentLengthPercentage(): float {
-      return $this->sentLength * 100 / $this->totalLength;
+
+    public function getTotalLength():float {
+        return $this->totalLength;
+    }
+    
+   
+    public function getSentLength():float {
+        return $this->sentLength;
     }
   }
 
