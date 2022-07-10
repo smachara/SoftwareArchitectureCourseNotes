@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Sam\OpenClosePrinciple;
 
-final class Song implements Measurable {
+final class Song extends Measurable {
     private float $totalLength;
     private float $sentLength;
 
