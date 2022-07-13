@@ -161,11 +161,133 @@
 <icon BUILTIN="bookmark"/>
 <node CREATED="1657479083623" HGAP="21" ID="ID_482482176" MODIFIED="1657479393808" STYLE="fork" TEXT="Facilit&#xe9; d&apos;ajout de nouveaux cas d&apos;utilisation dans notre application." VSHIFT="17"/>
 </node>
-<node CREATED="1657479460656" ID="ID_95099679" MODIFIED="1657479464860" TEXT="Example"/>
+<node CREATED="1657479460656" ID="ID_95099679" MODIFIED="1657486442761" TEXT="Example">
+<node CREATED="1657486418385" ID="ID_305032997" LINK="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step1" MODIFIED="1657486502400" TEXT="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step1">
+<icon BUILTIN="button_cancel"/>
+</node>
+<node CREATED="1657486443987" ID="ID_491923050" LINK="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step2" MODIFIED="1657487278002">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Interfaces</b>&#160;&#160;&#160;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step2
+    </p>
+  </body>
+</html>
+</richcontent>
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-1"/>
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node CREATED="1657486464819" ID="ID_767829942" LINK="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step3" MODIFIED="1657487294189">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Abstract Class</b>&#160;&#160;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step3
+    </p>
+  </body>
+</html>
+</richcontent>
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-2"/>
+</node>
+</node>
+<node CREATED="1657486921836" ID="ID_529910506" MODIFIED="1657487355291" TEXT="Interfaces &#xd83c;&#xdd9a; Classe abstraite">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1657487359462" HGAP="78" ID="ID_1489798687" MODIFIED="1657487591999" VSHIFT="-3">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Quand utiliser les interfaces ?
+    </p>
+    <p>
+      lors du d&#233;couplage entre les couches&#160;
+    </p>
+  </body>
+</html>
+</richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1657486952496" HGAP="18" ID="ID_220234763" MODIFIED="1657487605158" TEXT="Avantages de l&apos;interface :" VSHIFT="-15">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1657486987917" ID="ID_520907274" MODIFIED="1657486987917" TEXT="Ne modifie pas l&apos;arbre hi&#xe9;rarchique"/>
+<node CREATED="1657486987932" ID="ID_1777438590" MODIFIED="1657486987932" TEXT="Permet de mettre en &#x153;uvre N interfaces"/>
+</node>
+</node>
+<node CREATED="1657487359462" HGAP="28" ID="ID_1159163924" MODIFIED="1657487615478" VSHIFT="12">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Quand utiliser Abstract ?
+    </p>
+    <p>
+      Dans certains cas pour les mod&#232;les de domaine.
+    </p>
+  </body>
+</html>
+</richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1657486966228" ID="ID_527131732" MODIFIED="1657487582679" TEXT="Classe abstraite :" VSHIFT="50">
+<font NAME="SansSerif" SIZE="12"/>
+<node CREATED="1657487079710" ID="ID_971121965" MODIFIED="1657487231721" TEXT="Avantages :">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1657487038889" ID="ID_431341898" MODIFIED="1657487978310">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Permet de d&#233;velopper le pattern Template Method en poussant la logique vers le mod&#232;le.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node COLOR="#999999" CREATED="1657487767390" HGAP="13" ID="ID_1398743172" MODIFIED="1657487991461" TEXT="Patron de m&#xe9;thode" VSHIFT="43">
+<font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1657487792973" HGAP="14" ID="ID_1005950703" MODIFIED="1657487842790" TEXT="Le Patron de m&#xe9;thode est un patron de conception comportemental qui permet de d&#xe9;finir le squelette d&#x2019;un algorithme dans la classe de base, et laisse les sous-classes red&#xe9;finir les &#xe9;tapes sans modifier la structure globale de l&#x2019;algorithme." VSHIFT="-43"/>
+<node CREATED="1657487776213" ID="ID_409837842" LINK="https://refactoring.guru/fr/design-patterns/template-method/php/example" MODIFIED="1657487776213" TEXT="https://refactoring.guru/fr/design-patterns/template-method/php/example"/>
+</node>
+</node>
+</node>
+<node CREATED="1657487105604" ID="ID_1152845508" MODIFIED="1657487234609" TEXT="Probl&#xe8;me :">
+<icon BUILTIN="button_cancel"/>
+<node CREATED="1657488147049" ID="ID_1991838874" MODIFIED="1657488147049" TEXT="Certains clients peuvent &#xea;tre limit&#xe9;s &#xe0; cause du squelette de l&#x2019;algorithme."/>
+<node CREATED="1657488147049" ID="ID_191414861" MODIFIED="1657488147049" TEXT="Vous ne respectez pas le Principe de substitution de Liskov, si vous supprimez l&#x2019;impl&#xe9;mentation d&#x2019;une &#xe9;tape par d&#xe9;faut dans une sous-classe."/>
+<node CREATED="1657488147065" ID="ID_887651597" MODIFIED="1657488147065" TEXT="Plus vous avez d&#x2019;&#xe9;tapes, plus le patron de m&#xe9;thode devient difficile &#xe0; maintenir."/>
+<node CREATED="1657487038889" ID="ID_936729930" MODIFIED="1657488162565" TEXT="Difficult&#xe9; de tra&#xe7;age"/>
+<node CREATED="1657487038904" ID="ID_84851418" MODIFIED="1657488162565" TEXT="Getters priv&#xe9;s (Dites ne demandez pas)"/>
+</node>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1656421485806" ID="ID_342109583" MODIFIED="1657479393808" STYLE="fork" TEXT="L">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1657488814314" ID="ID_399847940" MODIFIED="1657690940128" TEXT="Liskov&apos;s substitution principle (LSP)"/>
+<node CREATED="1657488839991" ID="ID_1554960304" MODIFIED="1657488839991" TEXT="Principe de substitution de Liskov">
+<node CREATED="1657488829334" ID="ID_1344921019" MODIFIED="1657488861309" TEXT="Le principe de substitution de Liskov est r&#xe9;ussi lorsqu&apos;une m&#xe9;thode et toutes ses abstractions produisent les m&#xea;mes effets secondaires et agissent sur les m&#xea;mes propri&#xe9;t&#xe9;s."/>
+<node CREATED="1657691487780" ID="ID_89011579" MODIFIED="1657691490496" TEXT=" Le fait de disposer d&apos;une hi&#xe9;rarchie signifie que nous &#xe9;tablissons un contrat sur le parent. En veillant &#xe0; ce que ce contrat soit maintenu sur l&apos;enfant, nous pouvons remplacer le parent et l&apos;application continuera &#xe0; fonctionner parfaitement."/>
+<node CREATED="1657691590911" ID="ID_454690258" MODIFIED="1657691617452" TEXT="">
+<icon BUILTIN="idea"/>
+<node CREATED="1657691637093" ID="ID_1127033457" MODIFIED="1657691752333" TEXT="Maintenir la conformit&#xe9; fonctionnelle pour mettre en &#x153;uvre l&apos;OCP."/>
+</node>
+<node CREATED="1657691619384" ID="ID_223999378" MODIFIED="1657691818406" TEXT="Le comportement des sous-classes doit respecter le contrat &#xe9;tabli dans la super-classe.">
+<icon BUILTIN="bookmark"/>
+</node>
+<node CREATED="1657691828613" ID="ID_1562355433" MODIFIED="1657691882111" TEXT="Exemple"/>
+</node>
 </node>
 <node CREATED="1656421489141" ID="ID_1400174259" MODIFIED="1657479393808" STYLE="fork" TEXT="I">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
