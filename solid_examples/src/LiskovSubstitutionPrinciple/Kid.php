@@ -13,6 +13,6 @@ class Kid extends Person
     }
 
     public function pay(): void{
-        throw "a kid can't use a credit card";
+        throw new Exception("a kid can't use a credit card");
     }
 }
