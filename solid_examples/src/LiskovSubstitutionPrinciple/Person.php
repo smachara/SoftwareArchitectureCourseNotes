@@ -3,12 +3,25 @@
 declare(strict_types=1);
 
 namespace Sam\LiskovSubstitutionPrinciple;
-
-class Person
+Abstract class Person
 {
-    public function __construct(private string $firstname, private string $lastname, private ?string $creditcard){}
+    public function __construct(private string $firstname, private string $lastname){}
+    
 
-    public function pay(): void{
-        print "my name is $this->firstname $this->lastname and I pay with the creadit card $this->creditcard";
-    } 
+
+    /**
+     * Get the value of firstname
+     */ 
+    public function getFirstname():string
+    {
+        return $this->firstname;
+    }
+
+    /**
+     * Get the value of lastname
+     */ 
+    public function getLastname():string
+    {
+        return $this->lastname;
+    }
 }

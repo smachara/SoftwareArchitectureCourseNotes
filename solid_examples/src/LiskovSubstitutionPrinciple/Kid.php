@@ -8,11 +8,17 @@ use Exception;
 
 class Kid extends Person
 {
-    public function __construct(private string $firstname, private string $lastname){
-        parent::__construct($firstname, $lastname, null);
+    public function __construct(private string $firstname, private string $lastname, private Adult $tutor){
+        parent::__construct($firstname, $lastname);
     }
 
-    public function pay(): void{
-        throw "a kid can't use a credit card";
+
+
+    /**
+     * Get the value of tutor
+     */ 
+    public function getTutor():Adult
+    {
+        return $this->tutor;
     }
 }
