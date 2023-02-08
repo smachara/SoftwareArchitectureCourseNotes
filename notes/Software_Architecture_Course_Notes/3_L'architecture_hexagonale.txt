@@ -1,0 +1,225 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-24T00:45:49+02:00
+
+====== 3 L'architecture hexagonale  (Hexagonal Architecture) ======
+Creado miércoles 24 agosto 2022
+
+===== [[+L'architecture logicielle]] =====
+
+===== [[+Qu'est-ce que l'architecture hexagonale ?]] =====
+
+==== clean architectures ====
+	<https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+	Hexagonal Architecture (a.k.a. Ports and Adapters) by Alistair Cockburn and adopted by Steve Freeman, and Nat Pryce in their wonderful book Growing Object Oriented Software
+	Onion Architecture by Jeffrey Palermo
+	Screaming Architecture from a blog of mine last year
+	DCI from James Coplien, and Trygve Reenskaug.
+	BCE by Ivar Jacobson from his book Object Oriented Software Engineering: A Use-Case Driven Approach
+	
+			l'intégration de toutes ces architectures en une seule idée concrète
+						Testable.
+							Les règles de gestion peuvent être testées sans l'interface utilisateur, la base de données, le serveur Web ou tout autre élément externe.
+						Indépendant des Frameworks.
+							L'architecture ne dépend pas de l'existence d'une bibliothèque de logiciels
+						Indépendance de l'interface utilisateur.
+							L'interface utilisateur peut changer facilement, sans modifier le reste du système.
+								Une interface utilisateur Web peut être remplacée par une interface utilisateur de console, par exemple, sans modifier les règles de gestion.
+						Indépendant de la base de données.
+							Vos règles de gestion ne sont pas liées à la base de données.
+								Vous pouvez remplacer Oracle ou SQL Server par Mongo, BigTable, CouchDB ou autre.
+						Indépendant de tout service extérieur.
+							En fait, les règles de votre entreprise ne connaissent tout simplement rien du monde extérieur.
+						Plus tolérant au changement.
+						Réutilisable.
+						Maintenable.
+		également appelée "Port et Adaptateurs"  (aka) “Port & Adapters”
+			Port : définition d'une interface publique.
+			Adaptateur : spécialisation d'un port pour un contexte spécifique.
+			
+		Motivation
+				 l'infiltration de la logique métier dans le code de l'interface utilisateur.
+					Il est difficile d'automatiser les tests.
+					Il ne permet pas le changement d'usage de l'application.
+					Il complique ou empêche son usage par d'autres logiciels.
+				le couplage avec les détails de l'infrastructure 
+			L'intention 
+				est de permettre à une application d'être utilisée de la même manière par les utilisateurs, les programmes, les tests automatisés ou les scripts, et d'être développée et testée de manière isolée de ses éventuels dispositifs d'exécution et bases de données.
+			La solution
+				Séparez notre application en différentes couches ou régions ayant leur propre responsabilité.
+				Découpler les couches de notre application pour leur permettre d'évoluer de manière isolée.
+				Le fait que le système soit séparé par responsabilités facilitera la réutilisation.
+				Tester en simulant le comportement des couches externes avec des doubles de test.
+		les couches
+					Domaine
+						La couche de domaine définit les concepts qui sont dans notre contexte tels que (User, Produit, panier, etc.), et les règles métiers qui sont déterminées de manière unique par nous (services de domaine).
+					Application
+						La couche application est celle où se trouvent les cas d'utilisation de notre application (enregistrement de l'utilisateur, publication du produit, ajout du produit au panier, etc.).
+					Infrastructure
+						Code qui change en fonction de décisions externes. Dans cette couche vivent les implémentations de les interfaces que nous allons définir au niveau du domaine. C'est-à-dire que nous nous appuierons sur le DIP de SOLID pour se découpler des dépendances externes.
+					La règle de dépendance.
+						o
+							Les dépendances ne peuvent aller QUE dans un sens. 
+							 Rien dans un cercle intérieur ne peut savoir quoi que ce soit sur ce qui se trouve dans un cercle extérieur. Cela inclut les fonctions, les classes, les variables ou toute autre entité logicielle nommée.
+							Et comment communiquer de l'intérieur vers l'extérieur ? 
+								 les événements
+								 le renversement du contrôle.
+							Cette règle nous donne la possibilité de modifier des éléments de nos couches extérieures sans affecter les couches intérieures.
+					Testing
+						o
+							Tests unitaires : couche application et domaine
+							Test d'intégration : couche d'infrastructure
+							Test d'acceptation : toutes les couches
+		Pros
+			Propose l'utilisation scrupuleuse des principes SOLID.
+			Force notre domaine à ne pas être couplés à des éléments externes grâce à l'utilisation d'interfaces spécifiques à notre domaine qui sont implémentées par des éléments externes.
+			Elle facilite le découplage de la méthode de prestation, ce qui permet à un cas d'utilisation de fonctionner plus facilement pour une application mobile, une API, un web traditionnel, une application web unique via REST, etc...
+			D'autre part, il permet d'être prêt à modifier les détails de mise en œuvre tels que la persistance ou le framework.
+			Basé sur l'inversion des dépendances, il facilite le test unitaire des composants.
+			On peut dire que DDD est construit sur l'architecture hexagonale comme pilier central en termes d'architecture.
+		Questions   
+			Quelle est la différence entre un contrôleur et un cas d'utilisation ? 
+				Un contrôleur peut faire partie d'un framework que nous utilisons (Laravel, par exemple). Dans ce cas, le contrôleur ferait partie de l'infrastructure et le cas d'utilisation ferait partie de notre couche d'application.
+				Le contrôleur est la porte d'entrée de notre application vers le monde extérieur et un cas d'utilisation est une fonctionnalité fournie par notre application (par exemple, l'enregistrement d'un utilisateur). Il est logique de les modéliser séparément car nous pouvons avoir différents "protocoles de communication" (contrôleurs) pour le même cas d'utilisation. Par exemple, pour enregistrer un utilisateur, nous pourrions le faire lorsque nous sommes interrogés via http (ce serait un contrôleur) ou lorsque nous recevons un événement qui est publié dans un bus d'événements (ce serait un autre contrôleur).
+			La couche Application peut-elle être considérée comme un domaine ?  
+
+Pourquoi sont-ils séparés ?  
+
+La couche Application ne contient-elle pas nos entités métier ?
+				La logique métier est le concept du contexte dans lequel vous travaillez. Par exemple, si vous travaillez sur un système destiné à gérer les affaires d'un cabinet d'avocats, les concepts de lois, de sanctions, d'articles, d'affaires, etc. contiennent la logique pure du domaine du droit.  La logique d'application, quant à elle, modéliserait le flux du système sur lequel vous travaillez, étant entendu que, le plus souvent, il existe de nombreux produits (concurrents) pour la même chose (système de gestion des dossiers d'un cabinet d'avocats), mais que leur fonctionnement ou les fonctionnalités offertes devraient évidemment varier. 
+
+				La clé est que la logique métier ne doit pas varier entre les différentes applications de différentes entreprises, tandis que la logique applicative modélise le flux concret du système d'une entreprise particulière,  Par exemple : dans un produit, lorsque vous créez un utilisateur et que vous en recommandez un autre, vous bénéficiez d'une réduction de 10 % sur la prochaine facture ; dans un autre produit, vous pouvez obtenir  une étoile de réputation pour un réseau social ; et dans un autre, rien de particulier peut se produire.
+			La couche infrastructure connaît la couche domaine ? 
+
+ D'après cette image, l'implémentation du Repos se trouve dans la couche infrastructure et est connectée directement au Repos sans passer par la couche Application Service. Cela respecterait-il l'architecture hexagonale ?
+				Si, les couches les plus extérieures peuvent connaître toutes les couches intérieures et pas seulement la suivante, mais pas l'inverse.
+
+					autrement dit :
+						Couche infrastructure : connaît la couche application et la couche domaine.
+						Couche application : connaît la couche domaine
+						Couche de domaine : Connaît la couche de domaine.
+				Par exemple, MysqlRepo implémente l'interface UserRepo qui, dans sa méthode de sauvegarde, reçoit 
+une entité User comme paramètre, la classe MysqlRepo connaît la couche de domaine.
+                
+Ainsi, compris de cette manière, le graphique respecte l'architecture hexagonale.
+	Repository Pattern
+		Appliquer l'inversion des dépendances à l'ORM
+			Appliquer le principe de l'inversion des dépendances pour découpler notre logique centrale des préoccupations liées à l'infrastructure.
+			Notre modèle de domaine doit être libre de toute préoccupation liée à l'infrastructure. Votre ORM doit donc importer votre modèle, et non l'inverse.
+			Est une abstraction qui simplifie le stockage des données, ce qui nous permet de découpler notre couche de modèle de la couche de données.
+		Le modèle Repository est une abstraction simple autour du stockage permanent. 
+			 Le Repository vous donne l'illusion d'une collection d'objets en mémoire. Il permet de créer facilement un FakeRepository pour les tests et de changer les détails fondamentaux de votre infrastructure sans perturber votre application principale. 
+		o
+			<https://proandroiddev.com/the-real-repository-pattern-in-android-efba8662b754>
+		o
+			<https://www.cosmicpython.com/book/chapter_02_repository.html>
+			Persistance de notre modèle de domaine
+				Architecture en couches
+					Une architecture en couches est une approche commune pour structurer un système qui possède une interface utilisateur, une certaine logique et une base de données.
+						o
+					S'agit-il de ports et d'adaptateurs ? 
+						Modèle-Vue-Contrôleur (MVC).  Dans tous les cas, l'objectif est de garder les couches séparées (ce qui est une bonne chose) et de faire en sorte que chaque couche ne dépende que de celle qui lui est inférieure.
+						Mais nous voulons que notre modèle de domaine n'ait aucune dépendance. 
+							Nous ne voulons pas que les problèmes d'infrastructure se retrouvent dans notre modèle de domaine 
+								ralentissent nos tests unitaires
+								 capacité à effectuer des changements.
+				Le modèle dépend d'un ORM (object-relational mappers)
+					ils comblent le gap conceptuel entre les objets et la modélisation du domaine et les bases de données et l'algèbre relationnelle.
+					ORM nous donne une ignorance de la persistance
+						permet à notre domaine de ne pas dépendre directement de technologies de bases de données particulières.
+					Peut-on vraiment dire que notre modèle ne connaisse pas la base de données ?  
+
+Comment peut-il être séparé des aspects liés au stockage alors que les propriétés de notre modèle sont directement couplées aux colonnes de la base de données ?
+						Nos classes de modèle héritent directement des classes de l'ORM, donc notre modèle dépend de l'ORM.
+				Inverser la dépendance : L'ORM dépend du modèle
+					L'alternative est de définir votre schéma séparément, et de définir un mappeur explicite pour la conversion entre le schéma et notre modèle de domaine.
+					notre objectif d'inverser la dépendance traditionnelle
+						sans avoir à modifier le modèle de domaine.
+						   donc
+							le modèle de domaine reste "pur" et libre de toute préoccupation d'infrastructure.
+							Nous pouvons nous débarrasser de l'ORM actuel et en utiliser un autre
+							passer à un système de persistance totalement différent,
+						comment
+							1. L'ORM importe (ou "dépend de" ou "connaît") le modèle de domaine, et non l'inverse.
+							2. Nous définissons nos tables et colonnes de base de données en utilisant des abstractions.
+							3. Lorsque nous appelons la fonction de mappage, elle fait sa magie pour lier nos classes de modèle de domaine aux différentes tables que nous avons définies.
+		Le repository le plus simple
+			 n'a que deux méthodes :
+				add() "save" pour placer un nouvel élément dans le répertoire
+				get() "find" pour retourner l'élément précédemment ajouté
+			Cette simplicité auto-imposée nous empêche de coupler notre modèle de domaine à la base de données.
+		il est facile de le simuler pour les tests unitaires.
+			Ce test serait probablement classé comme un test d'intégration, puisque nous vérifions que notre code (le repository) est correctement intégré à la base de données ;
+		avantages et inconvénients
+			o
+				Nous disposons d'une interface simple entre le stockage persistant et notre modèle de domaine.
+				Il est facile de créer une fausse version du référentiel pour les tests unitaires, ou d'échanger différentes solutions de stockage, car nous avons entièrement découplé le modèle des préoccupations liées à l'infrastructure.
+				En écrivant le modèle du domaine avant de penser à la persistance, nous pouvons nous concentrer sur le problème à résoudre. Si nous voulons changer radicalement notre approche, nous pouvons le faire dans notre modèle, sans avoir à nous préoccuper des clés étrangères ou des migrations plus tard.
+				Notre schéma de base de données est très simple, car nous avons un contrôle total sur la façon dont nous mappons nos objets aux tables.
+			o
+				Un ORM vous offre déjà un certain découplage. La modification des clés étrangères peut être difficile, mais il devrait être assez facile de passer de MySQL à Postgres si vous en avez besoin.
+				Maintenir les mappages ORM à la main nécessite un travail et un code supplémentaires.
+				Toute couche supplémentaire d'indirection augmente toujours les coûts de maintenance et ajoute un facteur "WTF" pour les programmeurs qui n'ont jamais vu le modèle Repository auparavant.
+		Compromis 
+			Oui, pour les cas simples, un modèle de domaine découplé est plus difficile à mettre en œuvre qu'un simple modèle ORM/ActiveRecord.
+			Mais plus le domaine est complexe, plus l'investissement effectué pour se libérer des préoccupations liées à l'infrastructure sera rentable en termes de facilité à effectuer des changements.
+			o
+		Example
+	Filter Pattern
+		Est un patron de conception qui permet aux développeurs de filtrer un ensemble d'objets en utilisant différents critères et en les enchaînant de manière découplée par des opérations logiques. 
+
+		Ce type de patron de conception fait partie des patrons structurels car il combine plusieurs critères pour obtenir un seul critère.
+		<https://sceweb.sce.uhcl.edu/helm/WEBPAGES-SoftwareDesignPatterns/myfiles/TableContents/Module-10/design_patterns__filter_pattern.html>
+		Criteria patterrn
+			<https://github.com/CodelyTV/cqrs-ddd-php-example/tree/master/src/Shared/Domain/Criteria>
+		Specification pattern
+			o
+				<https://designpatternsphp.readthedocs.io/en/latest/Behavioral/Specification/README.html>
+		Example
+	Services d'infrastructure
+		Aspects à prendre en compte :
+			Les particularités de chaque adaptateur/implémentation de nos interfaces
+nous les préciserons par injection via le constructeur
+				Exemples 
+					Connexion aux bases de données dans les référentiels
+					Identifiants de l'expéditeur et du SMTP dans le service de notification par courriel.
+					Canal et clé API dans le service de notification via Slack
+			 Nous empêchons le couplage structurel dans nos interfaces 
+en évitant d'utiliser les concepts, la logique ou le flux een rapport avec nos implémentations.
+				Exemples 
+			Nous utiliserons de fausses implémentations de services pour effectuer nos tests.
+				Exemples 
+					Bases de données en memoire 
+					service de notification par courriel.
+	Organisation du code source
+		<https://medium.com/steve-cruz/domain-driven-design-ddd-file-structure-ade7fb26553d>
+		<https://grafikart.fr/blog/structure-code-symfony>
+		Une bonne manière de construire la structure
+de notre projet est d'isoler les éléments en 
+fonction de leur domaine, en utilisant des
+modules.
+			Exemples
+				Les services relatifs aux utilisateurs 
+
+ doivent tous faire partie du "User Domain"
+					* Authenticate User Service, 
+   *  Create Appointment Service, 
+   *  Create User Service, 
+   *  Update User Avatar Service
+				"Appointment Domain" qui devrait uniquement 
+
+ s'occuper de la logique commerciale liée aux 
+
+ rendez-vous
+					* create appointments 
+   *  list appointments 
+   *  check available appointments 
+   *  cancel appointments
+		Bounded Context
+		Ubiquitous Language
+		Structure du répertoire
+	o
+		Quelle est la différence entre un service d'application et un service de domaine ?
+		Comment modéliser mon domaine ?
+		De quoi et comment dois-je extraire les interfaces ?
+		Comment cela affecte-t-il mes tests ?

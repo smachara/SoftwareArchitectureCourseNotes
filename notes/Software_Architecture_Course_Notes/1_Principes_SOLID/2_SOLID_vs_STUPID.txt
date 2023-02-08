@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-24T00:13:01+02:00
+
+====== 2 SOLID vs STUPID ======
+Creado miércoles 24 agosto 2022
+
+===== S  Singleton =====
+	Il s'agit d'un modèle de conception  qui nous permet 
+			* garantir qu'une classe n'a qu'une seule instance
+			* tout en fournissant un point d'accès global à cette instance.
+				ce qui peut être réalisé par l'injection de dépendances
+	Problèmes: 
+		Viole le principe de la responsabilité unique. Car il resoudre deux problèmes en même temps.
+		Le modèle Singleton peut masquer une mauvaise conception, par exemple, lorsque les composants du programme en savent trop sur les autres.
+		Ce modèle nécessite un traitement spécial dans un environnement multithread, afin que les multiples threads ne créent pas un objet Singleton plusieurs fois.
+		Rend plus difficile la détection le couplage entre les classes
+		Les tests sont plus complexes, car :
+			rend plus difficile l'isolation des classes.
+			Cela rend les tests parallèles impossibles.
+
+===== T Tight Coupling =====
+	Les composants logiciels sont fortement dépendants les uns des autres.
+		 ce qui empêche la maintenabilité et la tolérance au changement.
+
+===== U Untestability =====
+	Créer un code difficile à tester.
+		 En n'injectant pas les dépendances via le constructeur, nous sommes obligés d'utiliser des coutures dans notre code.
+
+===== P Premature Optimization =====
+	"Optimisation prématurée" est une expression utilisée pour décrire une situation où un programmeur laisse des considérations de performance affecter la conception d'un morceau de code.
+		Anticipez nos besoins logiciels en développant des abstractions inutiles qui ajoutent de la complexité.
+		Le vrai problème est que les programmeurs ont passé beaucoup trop de temps à se préoccuper de l'efficacité au mauvais endroit et au mauvais moment ;
+
+===== I Indescriptive Naming =====
+	"Nommage non descriptif" L'une des erreurs de débutant consiste à choisir des noms non descriptifs, que ce soit pour les variables, les méthodes ou les classes.
+
+===== D Duplication =====
+	"duplicité de code". Tout code qui se trouve sous une forme identique ou similaire à plusieurs endroits de notre application est automatiquement erroné et représente une menace potentielle pour la poursuite du développement.

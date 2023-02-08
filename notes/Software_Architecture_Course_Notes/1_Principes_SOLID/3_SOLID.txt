@@ -1,0 +1,213 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-24T00:25:09+02:00
+
+====== 3 SOLID ======
+Creado miércoles 24 agosto 2022
+
+[ ] TODO
+
+==== S Single Responsqbility Principle (SRP) ====
+
+== 🔑️ ==
+		Le principe de responsabilité unique 
+			L'idée derrière le SRP est que chaque classe, module ou fonction d'un programme doit avoir une responsabilité/un objectif dans le programme.
+			"Chaque classe ne doit avoir qu'une seule raison de changer"
+			o
+				Petites classes avec de petits objectifs
+				noms des méthodes et des classes bien précis
+					Afin de ne pas inciter à l'ajout de plus de fonctionnalités. 
+					Exemple
+						Ordre | User : Ce sont des modèles de domaine, pas des services.
+						OrderAnalyzer | OrderProcessor : Ce sont des termes génériques qui nous amènent à nous retrouver avec plus d'une responsabilité.
+						OrderTrustabilityChecker | OrderMarginCalculator : Plus précis. N'ouvre pas la porte à l'ajout de nouvelles fonctionnalités
+
+=== **🎯️** ===
+				Haut niveau de cohésion et de robustesse.
+				Favoriser la composition de classes (injecter des composants)
+				Éviter la duplication du code
+
+				Test simplifié
+					Une classe avec une seule responsabilité aura beaucoup moins de cas de test, ce qui permet de réduire les efforts de test.
+				Faible couplage
+					Moins de fonctionnalités dans une seule classe aura moins de dépendances. Par conséquent, le couplage sera réduit.
+				Organisation plus efficace
+					Les classes plus petites et bien organisées sont plus faciles à rechercher par un lecteur de code débutant que les classes plus grandes.
+				Plus simple à intégrer
+					Les classes, les composants logiciels et les microservices qui n'ont qu'une seule responsabilité sont beaucoup plus faciles à expliquer, à comprendre et à mettre en œuvre que ceux qui offrent une solution pour tout. Cela réduit le nombre de bugs, améliore votre vitesse de développement et rend votre vie de développeur de logiciels beaucoup plus facile.
+				Plus simple à maintenir
+					En vous assurant que vos classes n'ont qu'une seule responsabilité, vous pouvez économiser beaucoup d'efforts dans le développement de l'application et créer une architecture plus facile à maintenir.
+
+=== 👀️ ===
+			Example
+				Supposons que nous écrivions une application php pour un cabinet de conseil en recrutement. Nous allons créer une classe Resume qui permet au consultant d'obtenir et de définir la technologie et les années d'expérience dans chaque CV, et de rechercher le résumé à partir de la base de données.
+				o
+					<https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SPR-Step1/solid_examples/src/SingleResponsabilityPrinciple>
+				o
+					<https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SRP-Step2/solid_examples/src/SingleResponsabilityPrinciple>
+
+==== O Open/Closed Principle (OCP) ====
+
+== 🔑️ ==
+
+=== **🎯️** ===
+
+=== 👀️ ===
+
+		Le principe ouvert/fermé
+			L'OCP affirme qu'une une entité applicatif (classe, fonction, module, services, microservices, cas d'utilisation, ...) doit être à la fois ouverte (à l'extension) et fermée (à la modification).
+			L'idée est qu'une fois qu'une classe a été approuvée via des revues de code, des tests unitaires et d'autres procédures de qualification, elle ne doit plus être modifiée mais seulement étendue. 
+			o
+				En évitant de dépendre d'implémentations spécifiques,
+				par l'utilisation des classes abstraites ou
+				des interfaces.
+			o
+				Facilité d'ajout de nouveaux cas d'utilisation dans notre application.
+			Example
+				<https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step1>
+				Interfaces   https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step2 <https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step2>
+				Abstract Class  https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step3 <https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step3>
+			Interfaces 🆚 Classe abstraite
+				Quand utiliser les interfaces ? 
+
+ lors du découplage entre les couches 
+					Avantages de l'interface :
+						Ne modifie pas l'arbre hiérarchique
+						Permet de mettre en œuvre N interfaces
+				Quand utiliser Abstract ? 
+
+ Dans certains cas pour les modèles de domaine.
+					Classe abstraite :
+						Avantages :
+							Permet de développer le pattern Template Method en poussant la logique vers le modèle.
+								Patron de méthode
+									Le Patron de méthode est un patron de conception comportemental qui permet de définir le squelette d’un algorithme dans la classe de base, et laisse les sous-classes redéfinir les étapes sans modifier la structure globale de l’algorithme.
+									<https://refactoring.guru/fr/design-patterns/template-method/php/example>
+						Problème :
+							Certains clients peuvent être limités à cause du squelette de l’algorithme.
+							Vous ne respectez pas le Principe de substitution de Liskov, si vous supprimez l’implémentation d’une étape par défaut dans une sous-classe.
+							Plus vous avez d’étapes, plus le patron de méthode devient difficile à maintenir.
+							Difficulté de traçage
+							Getters privés (Dites ne demandez pas)
+
+==== L Liskov's substitution principle (LSP) ====
+
+== 🔑️ ==
+
+=== **🎯️** ===
+
+=== 👀️ ===
+
+
+		Principe de substitution de Liskov
+			Le principe de substitution de Liskov est réussi lorsqu'une méthode et toutes ses abstractions produisent les mêmes effets secondaires et agissent sur les mêmes propriétés.
+			 Le fait de disposer d'une hiérarchie signifie que nous établissons un contrat sur le parent. En veillant à ce que ce contrat soit maintenu sur l'enfant, nous pouvons remplacer le parent et l'application continuera à fonctionner parfaitement.
+			o
+				Maintenir la conformité fonctionnelle pour mettre en œuvre l'OCP.
+			Le comportement des sous-classes doit respecter le contrat établi dans la super-classe.
+			Exemple
+				As you can see I have to set the the creditcad to null and throw an exception when we are going to pay. It is evident that the program is really bad and the use of inheritance is already generating important problems. How can we solve this? See branch LSP-step2
+					<https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/LSP-step1/solid_examples>
+				 In this case we have redefined the concept of Person to include less information. Now the kid is a Person since he/she always has a firstname and a lastname. It is the Adult class that incorporates the credit card to pay. This way everything is more reusable. If we want the kid to be able to pay something, he/she will do it delegating in the Adult class that is the one that can do it with the figure of tutor.  By executing the test the kid will be able to make a purchase if the tutor pays for it.
+					<https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/LSP-Step2/solid_examples>
+
+==== I Interface Segregation Principle (ISP) ====
+
+== 🔑️ ==
+
+=== **🎯️** ===
+
+=== 👀️ ===
+
+		Principe de ségrégation des interfaces
+			 Déclarer dans une interface des méthodes dont le client n'a pas besoin pollue l'interface et conduit à une interface "volumineuse"
+			 client ne doit pas être exposé à des méthodes dont il n'a pas besoin
+				Le ISP est tout particulièrement associé au principe de substitution de Liskov (LSP) et au principe de responsabilité unique (SRP).
+				<https://reflectoring.io/interface-segregation-principle/>
+
+		Exemple
+			
+			[ ] TODO 
+			
+			
+			
+			Concepto:
+				Ningún cliente debería verse forzado a depender de métodos que no usa
+			Cómo:
+				Definir contratos de interfaces basándonos en los clientes que las usan y no en las implementaciones que pudiéramos tener (Las interfaces pertenecen a los clientes)
+				Evitar Header Interfaces promoviendo Role Interfaces
+					o
+						<https://martinfowler.com/bliki/HeaderInterface.html>
+						<https://martinfowler.com/bliki/RoleInterface.html>
+			Finalidad:
+				Alta cohesión y bajo acoplamiento estructural
+			Ejemplo Sencillo
+				Queremos poder enviar notificaciones vía email, Slack, o fichero txt ¿Qué firma tendrá la interface? 📨
+					a) $notifier($content)
+					b) $notifier($slackChannel, $messageTitle, $messageContent, $messageStatus) ❌
+					c) $notifier($recieverEmail, $emailSubject, $emailContent) ❌
+					d) $notifier($destination, $subject, $content) ❌
+					e) $notifier($filename, $tag, $description) ❌
+				Podemos descartar que las opciones B, C y E fueran interfaces válidas, puesto que se estaría haciendo
+				Header Interface en base a la implementación (para Slack, email y fichero respectivamente).
+				En el caso de la opción D, podríamos considerarlo inválido dado que el tipo $destination no nos ofrece ninguna especificidad (no sabemos si es un email, un canal…).
+				Por último, en la opción A, sólo estaríamos enviando el contenido, por lo que las particularidades de cada uno de los tipos de notificación tendrían que venir dados en el constructor (dependiendo del caso de uso no siempre se podría).
+					Las interfaces pertenecen a los clientes y no a quienes las implementan
+					Diferencia: Nivel de abstracción de la implementación
+						a) Si sabemos destinatario en tiempo de compilación (parámetros por constructor)
+						d) Si no sabemos destinatario hasta tiempo de ejecución (perdemos el tipado)
+						f) Dos subscribers diferentes (email y slack) que leen de módulos…
+			Tenéis más información relacionada con este principio en los siguientes videos de nuestro canal de Youtube:
+				Principio de Segragación de Interfaces
+					<https://youtu.be/EzUIbMdxJTk>
+				Errores comunes al diseñar Interfaces - #SOLID - ISP
+					<https://youtu.be/mDAQLkdNGHU>
+
+
+
+==== D Dependency Inversion Principle (DIP) ====
+
+== 🔑️ ==
+
+=== **🎯️** ===
+
+=== 👀️ ===
+
+			[ ] TODO 
+		
+			Concepto:
+				Módulos de alto nivel no deberían depender de los de bajo nivel. Ambos deberían depender de abstracciones
+			Cómo:
+				Inyectar dependencias (parámetros recibidos en constructor)
+				Depender de las interfaces (contratos) de estas dependencias y no de implementaciones concretas
+				LSP como premisa
+			Finalidad:
+				Facilitar la modificación y substitución de implementaciones
+				Mejor testabilidad de clases
+				 Consejo:
+				 Una forma de ver si estamos violando DIP es comprobar nuestras clases del Servicio de aplicación si alguna de las dependencias está apuntando fuera de nuestro Dominio 
+			¿Cuándo deberíamos utilizar interfaces?
+				Cuando tenemos que tocar algo de Entrada/Salida (Por ejemplo, nos interesará en tiempo de Test no tener que hacer una conexión real a BD)
+				Cualquier escenario en el que necesitemos tolerancia al cambio
+			Ejemplo Sencillo
+				<https://github.com/CodelyTV/solid-principles-java-examples/tree/master/src/main/java/tv/codely/solid_principles/dependency_inversion_principle>
+					Etapa 1 - Instanciación desde los clientes
+						En esta primera fase, estaríamos instanciando en la propia clase el repositorio que vamos a utilizar en el método search, es decir, cuando instanciemos nuestro UserSearcher, esta clase internamente estaría haciendo un new de HardcodedInMemoryUsersRepository, lo cual nos lleva inevitablemente a estar fuertemente acoplados a dicho repositorio 🔒.
+						Desde el propio Test ya se observa este acoplamiento, obligando a saber, en este caso, que el usuario tiene que existir en el HashMap (caso de find_existing_users) o que no va a existir un usuario con un id concreto (caso de not_find_non_existing_users).
+					Etapa 2.0 Inyección de Dependencias 💉
+						Vamos un paso más allá en para reducir el acoplamiento en nuestra UserSearcher, para ello inyectaremos la dependencia que nuestra clase tiene respecto a HardcodedInMemoryUsersRepository en el propio constructor. De este modo, el punto de nuestro aplicación que instancie a nuestro UserSearcher será el responsable de saber cómo debe hacerlo y que otras dependencias puede haber detrás.
+						A nivel de Test observamos que, aunque no hemos ganado mucho en términos de acoplamiento, si que conseguimos exponer el acoplamiento de nuestras clases.
+					Etapa 2.1 Inyección de Dependencias de Parámetros 💉  
+						Aunque la clase UserSearcher no ha cambiado, hemos dado un paso más al realizar la inyección de dependencias de forma recursiva con el HardcodedInMemoryUsersRepository, que ahora recibiría como argumento en el constructor su atributo de clase users.
+						Si echamos un vistazo a los Test, vemos cómo ya no tenemos por qué saber qué usuarios existen en nuestro repositorio, por lo que conseguimos aislar nuestros Test sin que dependan de la infraestructura 
+					Etapa 3 - Inversión de Dependencias 🤹‍♀️
+						Vemos como ahora la clase UserSearcher lo que recibe por argumento en el constructor no es una implementación de UserRepository, sino una interface que define únicamente el contrato de un método search.
+						A nivel de Test ya vemos cómo podemos cambiar la implementación de UserRepository sin necesidad de tocar nuestro UserSearcher,  es decir, podemos pasarle como argumento cualquier clase que implemente la interface.
+					Conclusión
+						Ahora el acoplamiento irá de nuestro caso de uso a la interface y las diferentes implementaciones se dirigirán hacia nuestra interface, en lugar de acoplar nuestro caso de uso a la implementación.
+		
+		Principe d'inversion des dépendances
+			Exemple
+			Difference Between Inversion of Control and Dependency Injection
+		   Dependency Injection
+

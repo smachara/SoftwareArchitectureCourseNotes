@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-23T22:31:16+02:00
+
+====== 0 UML ======
+Creado martes 23 agosto 2022
+	Qu'est-ce UML ?
+		Diagramme UML (Unified Modeling Language) fournit une représentation visuelle d'un aspect d'un système. Les diagrammes UML illustrent les aspects quantifiables d'un système qui peuvent être décrits visuellement, tels que les relations, le comportement, la structure ou la fonctionnalité.
+	[[+Les types de diagrammes]]
+		Présentation des 14 types et exemples de diagrammes UML <https://gitmind.com/fr/types-diagrammes-uml.html>
+		Diagrammes de structure  
+			Classe
+			Composants
+			Déploiement
+			Objets
+			Paquetage
+			Profil
+			Structure composite
+		Diagrammes comportementaux
+			Cas d’utilisation
+			Activité
+			État
+			Séquence
+			Communication
+			Présentation des interactions
+			Diagramme de temps

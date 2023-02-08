@@ -1,0 +1,1449 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Cours d'architecture des logiciels &nbsp;&nbsp;&nbsp;("Software architecture")</title>
+<style type="text/css">
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+&#xa;    <p style="text-align: center">&#xa;      Cours d'architecture des logiciels&#xa;    </p>&#xa;    <p style="text-align: center">&#xa;      (&quot;Software architecture&quot;)&#xa;    </p>&#xa;  
+<ul><li><p>Patterns
+<ul><li>Value Object (VO)
+<ul><li><a href="https://martinfowler.com/bliki/ValueObject.html" target="_blank"><span class=l>~</span>&nbsp;https://martinfowler.com/bliki/ValueObject.html
+</a>
+
+</li>
+<li>&nbsp;
+<ul><li><p>"Value Object" est un mod&#232;le de conception dans lequel un objet est con&#231;u pour repr&#233;senter quelque chose de simple, comme des devises ou des dates. Un objet valeur est &#233;gal &#224;&nbsp;un autre objet valeur si les deux objets ont la m&#234;me valeur bien qu'ils soient deux objets diff&#233;rents.
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Principe " Tell-Don't-Ask "
+<ul><li><p><a href="https://martinfowler.com/bliki/TellDontAsk.html" target="_blank"><span class=l>~</span>&nbsp;https://martinfowler.com/bliki/TellDontAsk.html
+</a>
+&#xa;    <p>&#xa;      Ce principe nous rappelle qu'au lieu de demander des donn&#233;es &#224; un objet et d'agir sur ces donn&#233;es, nous devons plut&#244;t dire &#224; un objet ce qu'il doit faire.&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>inversion Control Principle (ICP)
+<ul><li>Chain of responsability
+<ul><li><a href="https://refactoring.guru/es/design-patterns/chain-of-responsibility" target="_blank"><span class=l>~</span>&nbsp;https://refactoring.guru/es/design-patterns/chain-of-responsibility
+</a>
+
+</li>
+
+</ul>
+</li>
+<li>Strategy
+<ul><li><a href="https://refactoring.guru/es/design-patterns/strategy" target="_blank"><span class=l>~</span>&nbsp;https://refactoring.guru/es/design-patterns/strategy
+</a>
+
+</li>
+
+</ul>
+</li>
+<li>State
+<ul><li><a href="https://refactoring.guru/es/design-patterns/state" target="_blank"><span class=l>~</span>&nbsp;https://refactoring.guru/es/design-patterns/state
+</a>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Filter Pattern
+<ul><li><p>Filter pattern or Criteria pattern is a design pattern that enables developers to filter a set of objects using different criteria and chaining them in a decoupled way through logical operations. This type of design pattern comes under structural pattern as this pattern combines multiple criteria to obtain single criteria.
+<p><a href="https://sceweb.sce.uhcl.edu/helm/WEBPAGES-SoftwareDesignPatterns/myfiles/TableContents/Module-10/design_patterns__filter_pattern.html" target="_blank"><span class=l>~</span>&nbsp;https://sceweb.sce.uhcl.edu/helm/WEBPAGES-SoftwareDesignPatterns/myfiles/TableContents/Module-10/design_patterns__filter_pattern.html
+</a>
+<p>Criteria patterrn
+<ul><li><a href="https://github.com/CodelyTV/cqrs-ddd-php-example/tree/master/src/Shared/Domain/Criteria" target="_blank"><span class=l>~</span>&nbsp;https://github.com/CodelyTV/cqrs-ddd-php-example/tree/master/src/Shared/Domain/Criteria
+</a>
+
+</li>
+
+</ul><p>Specification pattern
+</li>
+</ul>
+</li>
+
+</ul><p>UML
+<ul><li>Qu'est-ce UML ?
+<ul><li><p>diagramme UML (Unified Modeling Language) fournit une repr&#233;sentation visuelle d'un aspect d'un syst&#232;me. Les diagrammes UML illustrent les aspects quantifiables d'un syst&#232;me qui peuvent &#234;tre d&#233;crits visuellement, tels que les relations, le comportement, la structure ou la fonctionnalit&#233;.
+</li>
+</ul>
+</li>
+<li>Les types de diagrammes
+<ul><li>Pr&#233;sentation des 14 types et exemples de diagrammes UML
+<ul><li><a href="https://gitmind.com/fr/types-diagrammes-uml.html" target="_blank"><span class=l>~</span>&nbsp;https://gitmind.com/fr/types-diagrammes-uml.html
+</a>
+
+</li>
+
+</ul>
+</li>
+<li>Diagrammes de structure
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Classe</span>
+
+</li>
+<li>Composants
+
+</li>
+<li>D&#233;ploiement
+
+</li>
+<li>Objets
+
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Paquetage</span>
+
+</li>
+<li>Profil
+
+</li>
+<li>Structure composite
+
+</li>
+
+</ul>
+</li>
+<li>Diagrammes comportementaux
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Cas d&#8217;utilisation</span>
+
+</li>
+<li>Activit&#233;
+
+</li>
+<li>&#201;tat
+
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">S&#233;quence</span>
+
+</li>
+<li>Communication
+
+</li>
+<li>Pr&#233;sentation des interactions
+
+</li>
+<li>Diagramme de temps
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul><p><span style="color: #669900;">Principes SOLID : </span>
+<ul><li><span style="color: #669900;">qu'est-ce que c'est ?</span>
+<ul><li><p>Ce sont des principes ou des conventions largement accept&#233; dans l'industrie pour la conception de programmes informatiques. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>Ils ont comme objectif de rendre le code 
+<ul><li>plus facile &#224;&nbsp;maintenir
+
+</li>
+<li>plus tol&#233;rant au changement.
+
+</li>
+
+</ul><p>Ils sont Applicables au niveau de
+<ul><li>Micro
+<ul><li>conception des classes
+
+</li>
+
+</ul>
+</li>
+<li>Macro
+<ul><li>en termes d'architecture logicielle et de structure des services
+
+</li>
+
+</ul>
+</li>
+
+</ul><p>Briser le paradigme du r&#244;le d'"architecte logiciel".
+<ul><li> &nbsp;&nbsp;La conception de logiciels de qualit&#233; est une comp&#233;tence et non un r&#244;le.
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li><span style="color: #ff0000;">SOLID vs STUPID</span>
+<ul><li><span style="color: #ff0000;font-family: SansSerif, sans-serif; ">S</span>
+<ul><li>Singleton
+<ul><li>Il s'agit d'un mod&#232;le de conception &nbsp;qui nous permet 
+<ul><li>&nbsp;
+<ul><li>garantir qu'une classe n'a qu'une seule instance
+
+</li>
+<li>, tout en fournissant un point d'acc&#232;s global &#224;&nbsp;cette instance.
+<ul><li>ce qui peut &#234;tre r&#233;alis&#233; par l'injection de d&#233;pendances
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Probl&#232;mes: 
+<ul><li><p>Viole le principe de la responsabilit&#233; unique. Car il resoudre deux probl&#232;mes en m&#234;me temps.
+<p>Le mod&#232;le Singleton peut masquer une mauvaise conception, par exemple, lorsque les composants du programme en savent trop sur les autres.
+<p>Ce mod&#232;le n&#233;cessite un traitement sp&#233;cial dans un environnement multithread, afin que les multiples threads ne cr&#233;ent pas un objet Singleton plusieurs fois.
+<p>Rend plus difficile la d&#233;tection le couplage entre les classes
+<p>Les tests sont plus complexes, car :
+<ul><li>rend plus difficile l'isolation des classes.
+
+</li>
+<li>Cela rend les tests parall&#232;les impossibles.
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #ff0000;font-family: SansSerif, sans-serif; ">T</span>
+<ul><li>Tight Coupling
+<ul><li>Les composants logiciels sont fortement d&#233;pendants les uns des autres.
+<ul><li> ce qui emp&#234;che la maintenabilit&#233; et la tol&#233;rance au changement.
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #ff0000;font-family: SansSerif, sans-serif; ">U</span>
+<ul><li>Untestability
+<ul><li>Cr&#233;er un code difficile &#224;&nbsp;tester.
+<ul><li><p><a href="#ID_1264454043" target="_blank"><span class=l>~</span>&nbsp; En n'injectant pas les d&#233;pendances via le constructeur, nous sommes oblig&#233;s d'utiliser des coutures dans notre code.
+</a>
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #ff0000;font-family: SansSerif, sans-serif; ">P</span>
+<ul><li>Premature Optimization
+<ul><li><p>"Optimisation pr&#233;matur&#233;e" est une expression utilis&#233;e pour d&#233;crire une situation o&#249; un programmeur laisse des consid&#233;rations de performance affecter la conception d'un morceau de code.
+<ul><li><p>Anticipez nos besoins logiciels en d&#233;veloppant des abstractions inutiles qui ajoutent de la complexit&#233;.
+<p>Le vrai probl&#232;me est que les programmeurs ont pass&#233; beaucoup trop de temps &#224;&nbsp;se pr&#233;occuper de l'efficacit&#233; au mauvais endroit et au mauvais moment ;
+</li>
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #ff0000;font-family: SansSerif, sans-serif; ">I</span>
+<ul><li>Indescriptive Naming
+<ul><li><p>"Nommage non descriptif" L'une des erreurs de d&#233;butant consiste &#224;&nbsp;choisir des noms non descriptifs, que ce soit pour les variables, les m&#233;thodes ou les classes.
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #ff0000;font-family: SansSerif, sans-serif; ">D</span>
+<ul><li>Duplication
+<ul><li><p>"duplicit&#233; de code". Tout code qui se trouve sous une forme identique ou similaire &#224;&nbsp;plusieurs endroits de notre application est automatiquement erron&#233; et repr&#233;sente une menace potentielle pour la poursuite du d&#233;veloppement.
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>SOLID
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">S</span>
+<ul><li>Single Responsqbility Principle (SRP) 
+
+</li>
+<li>Le principe de responsabilit&#233; unique 
+<ul><li><p>L'id&#233;e derri&#232;re le SRP est que chaque classe, module ou fonction d'un programme doit avoir une responsabilit&#233;/un objectif dans le programme.
+<p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">"Chaque classe ne doit avoir qu'une seule raison de changer"</span>
+<p>&nbsp;
+<ul><li>Petites classes avec de petits objectifs
+
+</li>
+<li>noms des m&#233;thodes et des classes bien pr&#233;cis
+<ul><li>Afin de ne pas inciter &#224;&nbsp;l'ajout de plus de fonctionnalit&#233;s. 
+
+</li>
+<li>Exemple
+<ul><li><p>Ordre | User : Ce sont des mod&#232;les de domaine, pas des services.
+<p>OrderAnalyzer | OrderProcessor : Ce sont des termes g&#233;n&#233;riques qui nous am&#232;nent &#224;&nbsp;nous retrouver avec plus d'une responsabilit&#233;.
+<p>OrderTrustabilityChecker | OrderMarginCalculator : Plus pr&#233;cis. N'ouvre pas la porte &#224;&nbsp;l'ajout de nouvelles fonctionnalit&#233;s
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul><p>&#55358;&#56831;
+<ul><li>Haut niveau de coh&#233;sion et de robustesse.
+
+</li>
+<li>Favoriser la composition de classes (injecter des composants)
+
+</li>
+<li>&#201;viter la duplication du code
+
+</li>
+
+</ul><p>&nbsp;
+<ul><li>Test simplifi&#233;
+<ul><li><p>Une classe avec une seule responsabilit&#233; aura beaucoup moins de cas de test, ce qui permet de r&#233;duire les efforts de test.
+</li>
+</ul>
+</li>
+<li>Faible couplage
+<ul><li><p>Moins de fonctionnalit&#233;s dans une seule classe aura moins de d&#233;pendances. Par cons&#233;quent, le couplage sera r&#233;duit.
+</li>
+</ul>
+</li>
+<li>Organisation plus efficace
+<ul><li><p>Les classes plus petites et bien organis&#233;es sont plus faciles &#224;&nbsp;rechercher par un lecteur de code d&#233;butant que les classes plus grandes.
+</li>
+</ul>
+</li>
+<li>Plus simple &#224;&nbsp;int&#233;grer
+<ul><li><p>Les classes, les composants logiciels et les microservices qui n'ont qu'une seule responsabilit&#233; sont beaucoup plus faciles &#224;&nbsp;expliquer, &#224;&nbsp;comprendre et &#224;&nbsp;mettre en &#339;uvre que ceux qui offrent une solution pour tout. Cela r&#233;duit le nombre de bugs, am&#233;liore votre vitesse de d&#233;veloppement et rend votre vie de d&#233;veloppeur de logiciels beaucoup plus facile.
+</li>
+</ul>
+</li>
+<li>Plus simple &#224;&nbsp;maintenir
+<ul><li><p>En vous assurant que vos classes n'ont qu'une seule responsabilit&#233;, vous pouvez &#233;conomiser beaucoup d'efforts dans le d&#233;veloppement de l'application et cr&#233;er une architecture plus facile &#224;&nbsp;maintenir.
+</li>
+</ul>
+</li>
+
+</ul><p>Example
+<ul><li><p>Supposons que nous &#233;crivions une application php pour un cabinet de conseil en recrutement. Nous allons cr&#233;er une classe Resume qui permet au consultant d'obtenir et de d&#233;finir la technologie et les ann&#233;es d'exp&#233;rience dans chaque CV, et de rechercher le r&#233;sum&#233; &#224;&nbsp;partir de la base de donn&#233;es.
+<p>&nbsp;
+<ul><li><p><a href="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SPR-Step1/solid_examples/src/SingleResponsabilityPrinciple" target="_blank"><span class=l>~</span>&nbsp;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SPR-Step1/solid_examples/src/SingleResponsabilityPrinciple
+</a>
+</li>
+</ul><p>&nbsp;
+<ul><li><p><a href="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SRP-Step2/solid_examples/src/SingleResponsabilityPrinciple" target="_blank"><span class=l>~</span>&nbsp;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/SRP-Step2/solid_examples/src/SingleResponsabilityPrinciple
+</a>
+</li>
+</ul></li>
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">O</span>
+<ul><li>Open/Closed Principle (OCP)
+
+</li>
+<li>Le principe ouvert/ferm&#233;
+<ul><li>&#xa;    L'OCP affirme qu'une une entit&#233; applicatif (classe, fonction, module, services, microservices, cas d'utilisation, ...) doit &#234;tre &#224; la fois ouverte (&#224; l'extension) et ferm&#233;e (&#224; la modification).&#xa;  
+<p>L'id&#233;e est qu'une fois qu'une classe a &#233;t&#233; approuv&#233;e via des revues de code, des tests unitaires et d'autres proc&#233;dures de qualification, elle ne doit plus &#234;tre modifi&#233;e mais seulement &#233;tendue. 
+<p>&nbsp;
+<ul><li>En &#233;vitant de d&#233;pendre d'impl&#233;mentations sp&#233;cifiques,
+
+</li>
+<li>par l'utilisation des classes abstraites ou
+
+</li>
+<li>des interfaces.
+
+</li>
+
+</ul><p>&nbsp;
+<ul><li>Facilit&#233; d'ajout de nouveaux cas d'utilisation dans notre application.
+
+</li>
+
+</ul><p>Example
+<ul><li><p><a href="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step1" target="_blank"><span class=l>~</span>&nbsp;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step1
+</a>
+<a href="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step2" target="_blank"><span class=l>~</span>&nbsp;&#xa;    <p>&#xa;      <b>Interfaces</b>&#160;&#160;&#160;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step2&#xa;    </p>&#xa;  
+</a>
+<a href="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step3" target="_blank"><span class=l>~</span>&nbsp;&#xa;    <p>&#xa;      <b>Abstract Class</b>&#160;&#160;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/OCP-Step3&#xa;    </p>&#xa;  
+</a>
+</li>
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Interfaces &#55356;&#56730;&nbsp;Classe abstraite</span>
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Quand utiliser les interfaces ?&#xa;    </p>&#xa;    <p>&#xa;      lors du d&#233;couplage entre les couches&#160;&#xa;    </p>&#xa;  </span>
+<ul><li>Avantages de l'interface :
+<ul><li>Ne modifie pas l'arbre hi&#233;rarchique
+
+</li>
+<li>Permet de mettre en &#339;uvre N interfaces
+
+</li>
+
+</ul>
+</li>
+
+</ul><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Quand utiliser Abstract ?&#xa;    </p>&#xa;    <p>&#xa;      Dans certains cas pour les mod&#232;les de domaine.&#xa;    </p>&#xa;  </span>
+<ul><li><span style="font-family: SansSerif, sans-serif; ">Classe abstraite :</span>
+<ul><li>Avantages :
+<ul><li>&#xa;    <p>&#xa;      Permet de d&#233;velopper le pattern Template Method en poussant la logique vers le mod&#232;le.&#xa;    </p>&#xa;  
+<ul><li><span style="color: #999999;font-size: 83%;font-family: SansSerif, sans-serif; ">Patron de m&#233;thode</span>
+<ul><li><p>Le Patron de m&#233;thode est un patron de conception comportemental qui permet de d&#233;finir le squelette d&#8217;un algorithme dans la classe de base, et laisse les sous-classes red&#233;finir les &#233;tapes sans modifier la structure globale de l&#8217;algorithme.
+<p><a href="https://refactoring.guru/fr/design-patterns/template-method/php/example" target="_blank"><span class=l>~</span>&nbsp;https://refactoring.guru/fr/design-patterns/template-method/php/example
+</a>
+</li>
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li>Probl&#232;me :
+<ul><li><p>Certains clients peuvent &#234;tre limit&#233;s &#224;&nbsp;cause du squelette de l&#8217;algorithme.
+<p>Vous ne respectez pas le Principe de substitution de Liskov, si vous supprimez l&#8217;impl&#233;mentation d&#8217;une &#233;tape par d&#233;faut dans une sous-classe.
+<p>Plus vous avez d&#8217;&#233;tapes, plus le patron de m&#233;thode devient difficile &#224;&nbsp;maintenir.
+<p>Difficult&#233; de tra&#231;age
+<p>Getters priv&#233;s (Dites ne demandez pas)
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">L</span>
+<ul><li>Liskov's substitution principle (LSP)
+
+</li>
+<li>Principe de substitution de Liskov
+<ul><li><p>Le principe de substitution de Liskov est r&#233;ussi lorsqu'une m&#233;thode et toutes ses abstractions produisent les m&#234;mes effets secondaires et agissent sur les m&#234;mes propri&#233;t&#233;s.
+<p> Le fait de disposer d'une hi&#233;rarchie signifie que nous &#233;tablissons un contrat sur le parent. En veillant &#224;&nbsp;ce que ce contrat soit maintenu sur l'enfant, nous pouvons remplacer le parent et l'application continuera &#224;&nbsp;fonctionner parfaitement.
+<p>&nbsp;
+<ul><li>Maintenir la conformit&#233; fonctionnelle pour mettre en &#339;uvre l'OCP.
+
+</li>
+
+</ul><p>Le comportement des sous-classes doit respecter le contrat &#233;tabli dans la super-classe.
+<p>Exemple
+<ul><li><p>As you can see I have to set the the creditcad to null and throw an exception when we are going to pay. It is evident that the program is really bad and the use of inheritance is already generating important problems. How can we solve this? See branch LSP-step2
+<ul><li><a href="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/LSP-step1/solid_examples" target="_blank"><span class=l>~</span>&nbsp;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/LSP-step1/solid_examples
+</a>
+
+</li>
+
+</ul><p> In this case we have redefined the concept of Person to include less information. Now the kid is a Person since he/she always has a firstname and a lastname. It is the Adult class that incorporates the credit card to pay. This way everything is more reusable. If we want the kid to be able to pay something, he/she will do it delegating in the Adult class that is the one that can do it with the figure of tutor. &nbsp;By executing the test the kid will be able to make a purchase if the tutor pays for it.
+<ul><li><a href="https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/LSP-Step2/solid_examples" target="_blank"><span class=l>~</span>&nbsp;https://github.com/smachara/SoftwareArchitectureCourseNotes/tree/LSP-Step2/solid_examples
+</a>
+
+</li>
+
+</ul></li>
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">I</span>
+<ul><li>Interface Segregation Principle (ISP)
+<ul><li><p>Concepto:
+<ul><li>Ning&#250;n cliente deber&#237;a verse forzado a depender de m&#233;todos que no usa
+
+</li>
+
+</ul><p>C&#243;mo:
+<ul><li><p>Definir contratos de interfaces bas&#225;ndonos en los clientes que las usan y no en las implementaciones que pudi&#233;ramos tener (Las interfaces pertenecen a los clientes)
+<p>Evitar Header Interfaces promoviendo Role Interfaces
+<ul><li>&nbsp;
+<ul><li><a href="https://martinfowler.com/bliki/HeaderInterface.html" target="_blank"><span class=l>~</span>&nbsp;https://martinfowler.com/bliki/HeaderInterface.html
+</a>
+
+</li>
+<li><a href="https://martinfowler.com/bliki/RoleInterface.html" target="_blank"><span class=l>~</span>&nbsp;https://martinfowler.com/bliki/RoleInterface.html
+</a>
+
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul><p>Finalidad:
+<ul><li>Alta cohesi&#243;n y bajo acoplamiento estructural
+
+</li>
+
+</ul><p>Ejemplo Sencillo
+<ul><li><p>Queremos poder enviar notificaciones v&#237;a email, Slack, o fichero txt &#191;Qu&#233; firma tendr&#225; la interface? &#55357;&#56552;
+<ul><li>a) $notifier($content)
+
+</li>
+<li>b) $notifier($slackChannel, $messageTitle, $messageContent, $messageStatus) &#10060;
+
+</li>
+<li>c) $notifier($recieverEmail, $emailSubject, $emailContent) &#10060;
+
+</li>
+<li>d) $notifier($destination, $subject, $content) &#10060;
+
+</li>
+<li>e) $notifier($filename, $tag, $description) &#10060;
+
+</li>
+
+</ul><p>Podemos descartar que las opciones B, C y E fueran interfaces v&#225;lidas, puesto que se estar&#237;a haciendo
+<p>Header Interface en base a la implementaci&#243;n (para Slack, email y fichero respectivamente).
+<p>En el caso de la opci&#243;n D, podr&#237;amos considerarlo inv&#225;lido dado que el tipo $destination no nos ofrece ninguna especificidad (no sabemos si es un email, un canal&#8230;).
+<p>Por &#250;ltimo, en la opci&#243;n A, s&#243;lo estar&#237;amos enviando el contenido, por lo que las particularidades de cada uno de los tipos de notificaci&#243;n tendr&#237;an que venir dados en el constructor (dependiendo del caso de uso no siempre se podr&#237;a).
+<ul><li>Las interfaces pertenecen a los clientes y no a quienes las implementan
+
+</li>
+<li>Diferencia: Nivel de abstracci&#243;n de la implementaci&#243;n
+<ul><li>a) Si sabemos destinatario en tiempo de compilaci&#243;n (par&#225;metros por constructor)
+
+</li>
+<li>d) Si no sabemos destinatario hasta tiempo de ejecuci&#243;n (perdemos el tipado)
+
+</li>
+<li>f) Dos subscribers diferentes (email y slack) que leen de m&#243;dulos&#8230;
+
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul><p>Ten&#233;is m&#225;s informaci&#243;n relacionada con este principio en los siguientes videos de nuestro canal de Youtube:
+<ul><li>Principio de Segragaci&#243;n de Interfaces
+<ul><li><a href="https://youtu.be/EzUIbMdxJTk" target="_blank"><span class=l>~</span>&nbsp;https://youtu.be/EzUIbMdxJTk
+</a>
+
+</li>
+
+</ul>
+</li>
+<li>Errores comunes al dise&#241;ar Interfaces - #SOLID - ISP
+<ul><li><a href="https://youtu.be/mDAQLkdNGHU" target="_blank"><span class=l>~</span>&nbsp;https://youtu.be/mDAQLkdNGHU
+</a>
+
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li>Principe de s&#233;gr&#233;gation des interfaces
+<ul><li><p> D&#233;clarer dans une interface des m&#233;thodes dont le client n'a pas besoin pollue l'interface et conduit &#224;&nbsp;une interface "volumineuse"
+<p><span style="font-family: SansSerif, sans-serif; font-weight: bold; "> client ne doit pas &#234;tre expos&#233; &#224;&nbsp;des m&#233;thodes dont il n'a pas besoin</span>
+<ul><li><p>Le ISP est tout particuli&#232;rement associ&#233; au principe de substitution de Liskov (LSP) et au principe de responsabilit&#233; unique (SRP).
+<p><a href="https://reflectoring.io/interface-segregation-principle/" target="_blank"><span class=l>~</span>&nbsp;https://reflectoring.io/interface-segregation-principle/
+</a>
+</li>
+</ul><p>&nbsp;
+<p>&nbsp;
+<p>Exemple
+<ul><li>&nbsp;
+
+</li>
+<li>&nbsp;
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">D</span>
+<ul><li>Dependency Inversion Principle (DIP)
+<ul><li>Concepto:
+<ul><li><p>M&#243;dulos de alto nivel no deber&#237;an depender de los de bajo nivel. Ambos deber&#237;an depender de abstracciones
+</li>
+</ul>
+</li>
+<li>C&#243;mo:
+<ul><li>Inyectar dependencias (par&#225;metros recibidos en constructor)
+
+</li>
+<li>Depender de las interfaces (contratos) de estas dependencias y no de implementaciones concretas
+
+</li>
+<li>LSP como premisa
+
+</li>
+
+</ul>
+</li>
+<li>Finalidad:
+<ul><li>Facilitar la modificaci&#243;n y substituci&#243;n de implementaciones
+
+</li>
+<li>Mejor testabilidad de clases
+
+</li>
+
+</ul>
+</li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;Consejo:
+<ul><li><p> Una forma de ver si estamos violando DIP es comprobar nuestras clases del Servicio de aplicaci&#243;n si alguna de las dependencias est&#225; apuntando fuera de nuestro Dominio 
+</li>
+</ul>
+</li>
+<li>&#191;Cu&#225;ndo deber&#237;amos utilizar interfaces?
+<ul><li><p>Cuando tenemos que tocar algo de Entrada/Salida (Por ejemplo, nos interesar&#225; en tiempo de Test no tener que hacer una conexi&#243;n real a BD)
+<p>Cualquier escenario en el que necesitemos tolerancia al cambio
+</li>
+</ul>
+</li>
+<li>Ejemplo Sencillo
+<ul><li><p><a href="https://github.com/CodelyTV/solid-principles-java-examples/tree/master/src/main/java/tv/codely/solid_principles/dependency_inversion_principle" target="_blank"><span class=l>~</span>&nbsp;https://github.com/CodelyTV/solid-principles-java-examples/tree/master/src/main/java/tv/codely/solid_principles/dependency_inversion_principle
+</a>
+<ul><li>Etapa 1 - Instanciaci&#243;n desde los clientes
+<ul><li><p>En esta primera fase, estar&#237;amos instanciando en la propia clase el repositorio que vamos a utilizar en el m&#233;todo search, es decir, cuando instanciemos nuestro UserSearcher, esta clase internamente estar&#237;a haciendo un new de HardcodedInMemoryUsersRepository, lo cual nos lleva inevitablemente a estar fuertemente acoplados a dicho repositorio &#55357;&#56594;.
+<p>Desde el propio Test ya se observa este acoplamiento, obligando a saber, en este caso, que el usuario tiene que existir en el HashMap (caso de find_existing_users) o que no va a existir un usuario con un id concreto (caso de not_find_non_existing_users).
+</li>
+</ul>
+</li>
+<li>Etapa 2.0 Inyecci&#243;n de Dependencias &#55357;&#56457;
+<ul><li><p>Vamos un paso m&#225;s all&#225; en para reducir el acoplamiento en nuestra UserSearcher, para ello inyectaremos la dependencia que nuestra clase tiene respecto a HardcodedInMemoryUsersRepository en el propio constructor. De este modo, el punto de nuestro aplicaci&#243;n que instancie a nuestro UserSearcher ser&#225; el responsable de saber c&#243;mo debe hacerlo y que otras dependencias puede haber detr&#225;s.
+<p>A nivel de Test observamos que, aunque no hemos ganado mucho en t&#233;rminos de acoplamiento, si que conseguimos exponer el acoplamiento de nuestras clases.
+</li>
+</ul>
+</li>
+<li>Etapa 2.1 Inyecci&#243;n de Dependencias de Par&#225;metros &#55357;&#56457;&nbsp;&nbsp;
+<ul><li><p>Aunque la clase UserSearcher no ha cambiado, hemos dado un paso m&#225;s al realizar la inyecci&#243;n de dependencias de forma recursiva con el HardcodedInMemoryUsersRepository, que ahora recibir&#237;a como argumento en el constructor su atributo de clase users.
+<p>Si echamos un vistazo a los Test, vemos c&#243;mo ya no tenemos por qu&#233; saber qu&#233; usuarios existen en nuestro repositorio, por lo que conseguimos aislar nuestros Test sin que dependan de la infraestructura 
+</li>
+</ul>
+</li>
+<li>Etapa 3 - Inversi&#243;n de Dependencias &#55358;&#56633;&#8205;&#9792;&#65039;
+<ul><li><p>Vemos como ahora la clase UserSearcher lo que recibe por argumento en el constructor no es una implementaci&#243;n de UserRepository, sino una interface que define &#250;nicamente el contrato de un m&#233;todo search.
+<p>A nivel de Test ya vemos c&#243;mo podemos cambiar la implementaci&#243;n de UserRepository sin necesidad de tocar nuestro UserSearcher, &nbsp;es decir, podemos pasarle como argumento cualquier clase que implemente la interface.
+</li>
+</ul>
+</li>
+<li>Conclusi&#243;n
+<ul><li><p>Ahora el acoplamiento ir&#225; de nuestro caso de uso a la interface y las diferentes implementaciones se dirigir&#225;n hacia nuestra interface, en lugar de acoplar nuestro caso de uso a la implementaci&#243;n.
+</li>
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Principe d'inversion des d&#233;pendances
+<ul><li>&nbsp;
+
+</li>
+<li>&nbsp;
+
+</li>
+<li>&nbsp;
+
+</li>
+<li>&nbsp;
+
+</li>
+<li>Exemple
+<ul><li>&nbsp;
+
+</li>
+<li>&nbsp;
+
+</li>
+
+</ul>
+</li>
+<li>Difference Between Inversion of Control and Dependency Injection
+
+</li>
+
+</ul>
+</li>
+<li> Dependency Injection
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Beneficios de la composici&#243;n sobre herencia 
+<ul><li><p><a href="https://github.com/CodelyTV/cqrs-ddd-php-example/blob/master/src/Mooc/Videos/Application/Create/VideoCreator.php" target="_blank"><span class=l>~</span>&nbsp;https://github.com/CodelyTV/cqrs-ddd-php-example/blob/master/src/Mooc/Videos/Application/Create/VideoCreator.php
+</a>
+<p>Como en el caso de nuestro VideoCreator, siempre que tengamos una dependencia y la estemos inyectando, hablar&#237;amos de composici&#243;n. Es decir, estamos compartiendo comportamiento a trav&#233;s de la composici&#243;n.
+<p>El beneficio que nos ofrece inyectar estas dependencias es que a nivel de Testing podremos &#8216;falsearlas&#8217; para evitar usar las reales que usar&#237;amos en producci&#243;n. Si por el contrario queremos testear una clase que herede de otra, nos estar&#237;amos tragando inevitablemente la clase padre (Y por consiguiente tendr&#237;amos que testear la clase padre en todos sus hijos).
+<p>&nbsp;
+<ul><li>Vamo a calmarno
+<ul><li>Usamos la herencia s&#243;lo cuando sea indispensable
+
+</li>
+
+</ul>
+</li>
+<li>Herencia para pocos modelos
+
+</li>
+<li>final por defecto
+<ul><li>Definiendo una clase como final evitamos que pueda extender
+
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li>Entra&#238;nement SOLID avec le kata GildedRose
+<ul><li><a href="https://kata-log.rocks/gilded-rose-kata" target="_blank"><span class=l>~</span>&nbsp;https://kata-log.rocks/gilded-rose-kata
+</a>
+
+</li>
+
+</ul>
+</li>
+
+</ul>&#xa;    <p>&#xa;      L'architecture hexagonale&#xa;    </p>&#xa;    <p>&#xa;      (Hexagonal Architecture)&#xa;    </p>&#xa;  
+<ul><li>L'architecture logicielle
+<ul><li>&#xa;    <p>&#xa;      Il d&#233;signe la <b>structure</b>, le <b>fonctionnement</b>&#160;et <b>l'interaction</b>&#160; entre les parties du logiciel.&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      d&#233;finit de <b>mani&#232;re abstraite</b>, les composants qui ex&#233;cutent une certaine t&#226;che informatique, leurs interfaces et la communication entre eux.&#xa;    </p>&#xa;  
+<p>constitue un ensemble de mod&#232;les et d'abstractions coh&#233;rents qui fournissent un cadre clair et d&#233;fini pour interagir avec le code source du logiciel.
+&#xa;    <p>&#xa;      constitue un ensemble <b>de mod&#232;les</b>&#160;et <b>d'abstractions</b>&#160; <b>coh&#233;rents</b>&#160; qui fournissent un <b>cadre clair et d&#233;fini</b>&#160;pour interagir avec le code source du logiciel.&#xa;    </p>&#xa;  
+</li>
+</ul>&#xa;    <p>&#xa;      Une architecture logicielle est <b>s&#233;lectionn&#233;e et con&#231;ue en fonction des</b>&#160; objectifs (exigences) et des contraintes.&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      Les <b>objectifs</b>&#160;sont ceux pr&#233;&#233;tablis pour le syst&#232;me d'information, mais pas seulement les objectifs <b>fonctionnels</b>, mais aussi d'autres objectifs tels que&#160;<b>la maintenabilit&#233;, l'testabilit&#233;, la flexibilit&#233; et l'interaction avec d'autres syst&#232;mes d'information</b>.&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      <b>la maintenabilit&#233;,</b>&#xa;    </p>&#xa;  
+<ul><li>symplicit&#233;
+
+</li>
+
+</ul>&#xa;    <p>&#xa;      <b>l'testabilit&#233;,</b>&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      <b>la flexibilit&#233;</b>&#xa;    </p>&#xa;  
+<ul><li>extensibilit&#233;
+
+</li>
+
+</ul>&#xa;    <p>&#xa;      <b>l'interaction avec d'autres syst&#232;mes d'information</b>.&#xa;    </p>&#xa;  
+</li>
+</ul>&#xa;    <p>&#xa;      Les <b>contraintes</b>&#160;sont celles qui d&#233;coulent des <b>technologies</b>&#160; disponibles pour mettre en &#339;uvre les syst&#232;mes d'information.&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul>
+</li>
+<li>Qu'est-ce que l'architecture hexagonale ?
+<ul><li><p>clean architectures 
+<ul><li><a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html" target="_blank"><span class=l>~</span>&nbsp;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+</a>
+
+</li>
+<li>&nbsp;
+<ul><li><p>Hexagonal Architecture (a.k.a. Ports and Adapters) by Alistair Cockburn and adopted by Steve Freeman, and Nat Pryce in their wonderful book Growing Object Oriented Software
+<p>Onion Architecture by Jeffrey Palermo
+<p>Screaming Architecture from a blog of mine last year
+<p>DCI from James Coplien, and Trygve Reenskaug.
+<p>BCE by Ivar Jacobson from his book Object Oriented Software Engineering: A Use-Case Driven Approach
+</li>
+</ul>
+</li>
+<li>l'int&#233;gration de toutes ces architectures en une seule id&#233;e concr&#232;te
+<ul><li>&#xa;    <p>&#xa;      <img src="Cours d'architecture des logiciels_4903688181481053082.jpeg" width="285" height="210" >&#xa;    </p>&#xa;  
+<ul><li>&nbsp;
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Testable.&#xa;    </p>&#xa;  </span>
+<ul><li>&#xa;    <p>&#xa;      Les r&#232;gles de gestion peuvent &#234;tre test&#233;es sans l'interface utilisateur, la base de donn&#233;es, le serveur Web ou tout autre &#233;l&#233;ment externe.&#xa;    </p>&#xa;  
+</li>
+</ul><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Ind&#233;pendant des Frameworks.&#xa;    </p>&#xa;  </span>
+<ul><li>&#xa;    <p>&#xa;      L'architecture ne d&#233;pend pas de l'existence d'une biblioth&#232;que de logiciels&#xa;    </p>&#xa;  
+</li>
+</ul><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Ind&#233;pendance de l'interface utilisateur.&#xa;    </p>&#xa;  </span>
+<ul><li>&#xa;    <p>&#xa;      L'interface utilisateur peut changer facilement, sans modifier le reste du syst&#232;me.&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      Une interface utilisateur Web peut &#234;tre remplac&#233;e par une interface utilisateur de console, par exemple, sans modifier les r&#232;gles de gestion.&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Ind&#233;pendant de la base de donn&#233;es.&#xa;    </p>&#xa;  </span>
+<ul><li>&#xa;    <p>&#xa;      Vos r&#232;gles de gestion ne sont pas li&#233;es &#224; la base de donn&#233;es.&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      Vous pouvez remplacer Oracle ou SQL Server par Mongo, BigTable, CouchDB ou autre.&#xa;    </p>&#xa;  
+</li>
+</ul></li>
+</ul><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Ind&#233;pendant de tout service ext&#233;rieur.&#xa;    </p>&#xa;  </span>
+<ul><li>&#xa;    <p>&#xa;      En fait, les r&#232;gles de votre entreprise ne connaissent tout simplement rien du monde ext&#233;rieur.&#xa;    </p>&#xa;  
+</li>
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Plus tol&#233;rant au changement.</span>
+<p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">R&#233;utilisable.</span>
+<p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Maintenable.</span>
+</li>
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>&#xa;    <p>&#xa;      &#233;galement appel&#233;e &quot;Port et Adaptateurs&quot;&#xa;    </p>&#xa;    <p>&#xa;      (aka) &#8220;Port &amp; Adapters&#8221;&#xa;    </p>&#xa;  
+<ul><li>Port : d&#233;finition d'une interface publique.
+
+</li>
+<li>Adaptateur : sp&#233;cialisation d'un port pour un contexte sp&#233;cifique.
+
+</li>
+
+</ul><p>&nbsp;
+<ul><li>Motivation
+<ul><li>&#xa;    <p>&#xa;      &#160;<b>l'infiltration de la logique m&#233;tier dans le code de l'interface&#160;utilisateur</b>.&#xa;    </p>&#xa;  
+<ul><li>Il est difficile d'automatiser les tests.
+
+</li>
+<li>Il ne permet pas le changement d'usage de l'application.
+
+</li>
+<li>Il complique ou emp&#234;che son usage par d'autres logiciels.
+
+</li>
+
+</ul><span style="font-family: SansSerif, sans-serif; ">&#xa;    <p>&#xa;      <b>le couplage avec les d&#233;tails de l'infrastructure</b>&#160;&#xa;    </p>&#xa;  </span>
+</li>
+</ul>
+</li>
+<li>L'intention 
+<ul><li><p>est de permettre &#224;&nbsp;une application d'&#234;tre utilis&#233;e de la m&#234;me mani&#232;re par les utilisateurs, les programmes, les tests automatis&#233;s ou les scripts, et d'&#234;tre d&#233;velopp&#233;e et test&#233;e de mani&#232;re isol&#233;e de ses &#233;ventuels dispositifs d'ex&#233;cution et bases de donn&#233;es.
+</li>
+</ul>
+</li>
+<li>La solution
+<ul><li>S&#233;parez notre application en diff&#233;rentes couches ou r&#233;gions ayant leur propre responsabilit&#233;.
+
+</li>
+<li>D&#233;coupler les couches de notre application pour leur permettre d'&#233;voluer de mani&#232;re isol&#233;e.
+
+</li>
+<li>Le fait que le syst&#232;me soit s&#233;par&#233; par responsabilit&#233;s facilitera la r&#233;utilisation.
+
+</li>
+<li>Tester en simulant le comportement des couches externes avec des doubles de test.
+
+</li>
+
+</ul>
+</li>
+
+</ul><p>les couches
+<ul><li>&#xa;    <p>&#xa;      <img width="435" height="335" src="Cours d'architecture des logiciels_257872286514281883.jpeg" >&#xa;    </p>&#xa;  
+<ul><li>&nbsp;
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Domaine</span>
+<ul><li><p>La couche de domaine d&#233;finit les concepts qui sont dans notre contexte tels que (User, Produit, panier, etc.), et les r&#232;gles m&#233;tiers qui sont d&#233;termin&#233;es de mani&#232;re unique par nous (services de domaine).
+</li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Application</span>
+<ul><li><p>La couche application est celle o&#249; se trouvent les cas d'utilisation de notre application (enregistrement de l'utilisateur, publication du produit, ajout du produit au panier, etc.).
+</li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Infrastructure</span>
+<ul><li><p>Code qui change en fonction de d&#233;cisions externes. Dans cette couche vivent les impl&#233;mentations de les interfaces que nous allons d&#233;finir au niveau du domaine. C'est-&#224;-dire que nous nous appuierons sur le DIP de SOLID pour se d&#233;coupler des d&#233;pendances externes.
+</li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">La r&#232;gle de d&#233;pendance.</span>
+<ul><li>&#xa;    <p>&#xa;      <img width="150" height="150" src="Cours d'architecture des logiciels_5254401222109784835.jpeg" >&#xa;    </p>&#xa;  
+<ul><li><p>Les d&#233;pendances ne peuvent aller QUE dans un sens. 
+<p> Rien dans un cercle int&#233;rieur ne peut savoir quoi que ce soit sur ce qui se trouve dans un cercle ext&#233;rieur. Cela inclut les fonctions, les classes, les variables ou toute autre entit&#233; logicielle nomm&#233;e.
+<p>Et comment communiquer de l'int&#233;rieur vers l'ext&#233;rieur ? 
+<ul><li>&#xa;    <p>&#xa;      &#160;les &#233;v&#233;nements&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      &#160;le renversement du contr&#244;le.&#xa;    </p>&#xa;  
+</li>
+</ul><p>Cette r&#232;gle nous donne la possibilit&#233; de modifier des &#233;l&#233;ments de nos couches ext&#233;rieures sans affecter les couches int&#233;rieures.
+</li>
+</ul></li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Testing</span>
+<ul><li>&#xa;    <p>&#xa;      <img width="342" height="183" src="Cours d'architecture des logiciels_5887035240817928765.jpeg" >&#xa;    </p>&#xa;  
+<ul><li>Tests unitaires : couche application et domaine
+
+</li>
+<li>Test d'int&#233;gration : couche d'infrastructure
+
+</li>
+<li>Test d'acceptation : toutes les couches
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul><p>Pros
+<ul><li><p>Propose l'utilisation scrupuleuse des principes SOLID.
+<p>Force notre domaine &#224;&nbsp;ne pas &#234;tre coupl&#233;s &#224;&nbsp;des &#233;l&#233;ments externes gr&#226;ce &#224;&nbsp;l'utilisation d'interfaces sp&#233;cifiques &#224;&nbsp;notre domaine qui sont impl&#233;ment&#233;es par des &#233;l&#233;ments externes.
+<p>Elle facilite le d&#233;couplage de la m&#233;thode de prestation, ce qui permet &#224;&nbsp;un cas d'utilisation de fonctionner plus facilement pour une application mobile, une API, un web traditionnel, une application web unique via REST, etc...
+<p>D'autre part, il permet d'&#234;tre pr&#234;t &#224;&nbsp;modifier les d&#233;tails de mise en &#339;uvre tels que la persistance ou le framework.
+<p>Bas&#233; sur l'inversion des d&#233;pendances, il facilite le test unitaire des composants.
+<p>On peut dire que DDD est construit sur l'architecture hexagonale comme pilier central en termes d'architecture.
+</li>
+</ul>&#xa;    <p>&#xa;      Questions&#160;&#160;&#160;&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      Quelle est la diff&#233;rence entre un contr&#244;leur et un cas d'utilisation ?&#160;&#xa;    </p>&#xa;  
+<ul><li><p>Un contr&#244;leur peut faire partie d'un framework que nous utilisons (Laravel, par exemple). Dans ce cas, le contr&#244;leur ferait partie de l'infrastructure et le cas d'utilisation ferait partie de notre couche d'application.
+<p>Le contr&#244;leur est la porte d'entr&#233;e de notre application vers le monde ext&#233;rieur et un cas d'utilisation est une fonctionnalit&#233; fournie par notre application (par exemple, l'enregistrement d'un utilisateur). Il est logique de les mod&#233;liser s&#233;par&#233;ment car nous pouvons avoir diff&#233;rents "protocoles de communication" (contr&#244;leurs) pour le m&#234;me cas d'utilisation. Par exemple, pour enregistrer un utilisateur, nous pourrions le faire lorsque nous sommes interrog&#233;s via http (ce serait un contr&#244;leur) ou lorsque nous recevons un &#233;v&#233;nement qui est publi&#233; dans un bus d'&#233;v&#233;nements (ce serait un autre contr&#244;leur).
+</li>
+</ul><p>La couche Application peut-elle &#234;tre consid&#233;r&#233;e comme un domaine ? &nbsp;
+<br>
+
+<br>
+Pourquoi sont-ils s&#233;par&#233;s ? &nbsp;
+<br>
+
+<br>
+La couche Application ne contient-elle pas nos entit&#233;s m&#233;tier ?
+<ul><li><p>La logique m&#233;tier est le concept du contexte dans lequel vous travaillez. Par exemple, si vous travaillez sur un syst&#232;me destin&#233; &#224;&nbsp;g&#233;rer les affaires d'un cabinet d'avocats, les concepts de lois, de sanctions, d'articles, d'affaires, etc. contiennent la logique pure du domaine du droit. &nbsp;La logique d'application, quant &#224;&nbsp;elle, mod&#233;liserait le flux du syst&#232;me sur lequel vous travaillez, &#233;tant entendu que, le plus souvent, il existe de nombreux produits (concurrents) pour la m&#234;me chose (syst&#232;me de gestion des dossiers d'un cabinet d'avocats), mais que leur fonctionnement ou les fonctionnalit&#233;s offertes devraient &#233;videmment varier. 
+<br>
+
+<p>La cl&#233; est que la logique m&#233;tier ne doit pas varier entre les diff&#233;rentes applications de diff&#233;rentes entreprises, tandis que la logique applicative mod&#233;lise le flux concret du syst&#232;me d'une entreprise particuli&#232;re, &nbsp;Par exemple : dans un produit, lorsque vous cr&#233;ez un utilisateur et que vous en recommandez un autre, vous b&#233;n&#233;ficiez d'une r&#233;duction de 10 % sur la prochaine facture ; dans un autre produit, vous pouvez obtenir &nbsp;une &#233;toile de r&#233;putation pour un r&#233;seau social ; et dans un autre, rien de particulier peut se produire.
+</li>
+</ul><p>La couche infrastructure conna&#238;t la couche domaine ? 
+<br>
+
+<br>
+ D'apr&#232;s cette image, l'impl&#233;mentation du Repos se trouve dans la couche infrastructure et est connect&#233;e directement au Repos sans passer par la couche Application Service. Cela respecterait-il l'architecture hexagonale ?
+<ul><li><p>Si, les couches les plus ext&#233;rieures peuvent conna&#238;tre toutes les couches int&#233;rieures et pas seulement la suivante, mais pas l'inverse.
+<br>
+
+<ul><li>autrement dit :
+<ul><li>Couche infrastructure : conna&#238;t la couche application et la couche domaine.
+
+</li>
+<li>Couche application : conna&#238;t la couche domaine
+
+</li>
+<li>Couche de domaine : Conna&#238;t la couche de domaine.
+
+</li>
+
+</ul>
+</li>
+
+</ul><p>Par exemple, MysqlRepo impl&#233;mente l'interface UserRepo qui, dans sa m&#233;thode de sauvegarde, re&#231;oit 
+<br>
+une entit&#233; User comme param&#232;tre, la classe MysqlRepo conna&#238;t la couche de domaine.
+<p>
+<br>
+Ainsi, compris de cette mani&#232;re, le graphique respecte l'architecture hexagonale.
+</li>
+</ul></li>
+</ul></li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Repository Pattern</span>
+<ul><li><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Appliquer l'inversion des d&#233;pendances &#224;&nbsp;l'ORM</span>
+<ul><li><p>Appliquer le principe de l'inversion des d&#233;pendances pour d&#233;coupler notre logique centrale des pr&#233;occupations li&#233;es &#224;&nbsp;l'infrastructure.
+<p>Notre mod&#232;le de domaine doit &#234;tre libre de toute pr&#233;occupation li&#233;e &#224;&nbsp;l'infrastructure. Votre ORM doit donc importer votre mod&#232;le, et non l'inverse.
+<p>Est une abstraction qui simplifie le stockage des donn&#233;es, ce qui nous permet de d&#233;coupler notre couche de mod&#232;le de la couche de donn&#233;es.
+</li>
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Le mod&#232;le Repository est une abstraction simple autour du stockage permanent. </span>
+<ul><li><p> Le Repository vous donne l'illusion d'une collection d'objets en m&#233;moire. Il permet de cr&#233;er facilement un FakeRepository pour les tests et de changer les d&#233;tails fondamentaux de votre infrastructure sans perturber votre application principale. 
+</li>
+</ul>&#xa;    <p>&#xa;      <img width="300" height="100" src="Cours d'architecture des logiciels_843792920134517697.jpeg" >&#xa;    </p>&#xa;  
+<ul><li><a href="https://proandroiddev.com/the-real-repository-pattern-in-android-efba8662b754" target="_blank"><span class=l>~</span>&nbsp;https://proandroiddev.com/the-real-repository-pattern-in-android-efba8662b754
+</a>
+
+</li>
+
+</ul>&#xa;    <p>&#xa;      <img width="350" height="150" src="Cours d'architecture des logiciels_2856848226547714782.jpeg" >&#xa;    </p>&#xa;  
+<ul><li><a href="https://www.cosmicpython.com/book/chapter_02_repository.html" target="_blank"><span class=l>~</span>&nbsp;https://www.cosmicpython.com/book/chapter_02_repository.html
+</a>
+
+</li>
+<li>Persistance de notre mod&#232;le de domaine
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Architecture en couches</span>
+<ul><li><p>Une architecture en couches est une approche commune pour structurer un syst&#232;me qui poss&#232;de une interface utilisateur, une certaine logique et une base de donn&#233;es.
+<ul><li>&#xa;    <p>&#xa;      <img width="350" height="150" src="Cours d'architecture des logiciels_5505121944424237611.jpeg" >&#xa;    </p>&#xa;  
+</li>
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">S'agit-il de ports et d'adaptateurs ? </span>
+<ul><li><p>Mod&#232;le-Vue-Contr&#244;leur (MVC). &nbsp;Dans tous les cas, l'objectif est de garder les couches s&#233;par&#233;es (ce qui est une bonne chose) et de faire en sorte que chaque couche ne d&#233;pende que de celle qui lui est inf&#233;rieure.
+<p>Mais nous voulons que notre mod&#232;le de domaine n'ait aucune d&#233;pendance. 
+<ul><li>Nous ne voulons pas que les probl&#232;mes d'infrastructure se retrouvent dans notre mod&#232;le de domaine 
+<ul><li>&#xa;    <p>&#xa;      ralentissent nos tests unitaires&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      &#160;capacit&#233; &#224; effectuer des changements.&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+
+</ul></li>
+</ul></li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Le mod&#232;le d&#233;pend d'un ORM (object-relational mappers)</span>
+<ul><li><p>ils comblent le gap conceptuel entre les objets et la mod&#233;lisation du domaine et les bases de donn&#233;es et l'alg&#232;bre relationnelle.
+<p>ORM nous donne une ignorance de la persistance
+<ul><li><p>permet &#224;&nbsp;notre domaine de ne pas d&#233;pendre directement de technologies de bases de donn&#233;es particuli&#232;res.
+</li>
+</ul><p>Peut-on vraiment dire que notre mod&#232;le ne connaisse pas la base de donn&#233;es ? &nbsp;
+<br>
+
+<br>
+Comment peut-il &#234;tre s&#233;par&#233; des aspects li&#233;s au stockage alors que les propri&#233;t&#233;s de notre mod&#232;le sont directement coupl&#233;es aux colonnes de la base de donn&#233;es ?
+<ul><li>Nos classes de mod&#232;le h&#233;ritent directement des classes de l'ORM, donc notre mod&#232;le d&#233;pend de l'ORM.
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Inverser la d&#233;pendance : L'ORM d&#233;pend du mod&#232;le</span>
+<ul><li><p>L'alternative est de d&#233;finir votre sch&#233;ma s&#233;par&#233;ment, et de d&#233;finir un mappeur explicite pour la conversion entre le sch&#233;ma et notre mod&#232;le de domaine.
+<p>notre objectif d'inverser la d&#233;pendance traditionnelle
+<ul><li>sans avoir &#224;&nbsp;modifier le mod&#232;le de domaine.
+
+</li>
+<li> &nbsp;&nbsp;donc
+<ul><li>le mod&#232;le de domaine reste "pur" et libre de toute pr&#233;occupation d'infrastructure.
+
+</li>
+<li>Nous pouvons nous d&#233;barrasser de l'ORM actuel et en utiliser un autre
+
+</li>
+<li>passer &#224;&nbsp;un syst&#232;me de persistance totalement diff&#233;rent,
+
+</li>
+
+</ul>
+</li>
+<li>comment
+<ul><li><p>1. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L'ORM importe (ou "d&#233;pend de" ou "conna&#238;t") le mod&#232;le de domaine, et non l'inverse.
+<p>2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous d&#233;finissons nos tables et colonnes de base de donn&#233;es en utilisant des abstractions.
+<p>3. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorsque nous appelons la fonction de mappage, elle fait sa magie pour lier nos classes de mod&#232;le de domaine aux diff&#233;rentes tables que nous avons d&#233;finies.
+</li>
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Le repository le plus simple</span>
+<ul><li> n'a que deux m&#233;thodes :
+<ul><li>add() "save" pour placer un nouvel &#233;l&#233;ment dans le r&#233;pertoire
+
+</li>
+<li>get() "find" pour retourner l'&#233;l&#233;ment pr&#233;c&#233;demment ajout&#233;
+
+</li>
+
+</ul>
+</li>
+<li>Cette simplicit&#233; auto-impos&#233;e nous emp&#234;che de coupler notre mod&#232;le de domaine &#224;&nbsp;la base de donn&#233;es.
+
+</li>
+
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">il est facile de le simuler pour les tests unitaires.</span>
+<ul><li><p>Ce test serait probablement class&#233; comme un test d'int&#233;gration, puisque nous v&#233;rifions que notre code (le repository) est correctement int&#233;gr&#233; &#224;&nbsp;la base de donn&#233;es ;
+</li>
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">avantages et inconv&#233;nients</span>
+<ul><li>&nbsp;
+<ul><li><p>Nous disposons d'une interface simple entre le stockage persistant et notre mod&#232;le de domaine.
+<p>Il est facile de cr&#233;er une fausse version du r&#233;f&#233;rentiel pour les tests unitaires, ou d'&#233;changer diff&#233;rentes solutions de stockage, car nous avons enti&#232;rement d&#233;coupl&#233; le mod&#232;le des pr&#233;occupations li&#233;es &#224;&nbsp;l'infrastructure.
+<p>En &#233;crivant le mod&#232;le du domaine avant de penser &#224;&nbsp;la persistance, nous pouvons nous concentrer sur le probl&#232;me &#224;&nbsp;r&#233;soudre. Si nous voulons changer radicalement notre approche, nous pouvons le faire dans notre mod&#232;le, sans avoir &#224;&nbsp;nous pr&#233;occuper des cl&#233;s &#233;trang&#232;res ou des migrations plus tard.
+<p>Notre sch&#233;ma de base de donn&#233;es est tr&#232;s simple, car nous avons un contr&#244;le total sur la fa&#231;on dont nous mappons nos objets aux tables.
+</li>
+</ul>
+</li>
+<li>&nbsp;
+<ul><li><p>Un ORM vous offre d&#233;j&#224; un certain d&#233;couplage. La modification des cl&#233;s &#233;trang&#232;res peut &#234;tre difficile, mais il devrait &#234;tre assez facile de passer de MySQL &#224;&nbsp;Postgres si vous en avez besoin.
+<p>Maintenir les mappages ORM &#224;&nbsp;la main n&#233;cessite un travail et un code suppl&#233;mentaires.
+<p>Toute couche suppl&#233;mentaire d'indirection augmente toujours les co&#251;ts de maintenance et ajoute un facteur "WTF" pour les programmeurs qui n'ont jamais vu le mod&#232;le Repository auparavant.
+</li>
+</ul>
+</li>
+
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Compromis </span>
+<ul><li><p>Oui, pour les cas simples, un mod&#232;le de domaine d&#233;coupl&#233; est plus difficile &#224;&nbsp;mettre en &#339;uvre qu'un simple mod&#232;le ORM/ActiveRecord.
+<p>Mais plus le domaine est complexe, plus l'investissement effectu&#233; pour se lib&#233;rer des pr&#233;occupations li&#233;es &#224;&nbsp;l'infrastructure sera rentable en termes de facilit&#233; &#224;&nbsp;effectuer des changements.
+&#xa;    <p>&#xa;      <img width="500" height="150" src="Cours d'architecture des logiciels_8111888749068157137.jpeg" >&#xa;    </p>&#xa;  
+</li>
+</ul><p>Example
+</li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Filter Pattern</span>
+<ul><li><p>Est un patron de conception qui permet aux d&#233;veloppeurs de filtrer un ensemble d'objets en utilisant diff&#233;rents crit&#232;res et en les encha&#238;nant de mani&#232;re d&#233;coupl&#233;e par des op&#233;rations logiques. 
+<br>
+
+<p>Ce type de patron de conception fait partie des patrons structurels car il combine plusieurs crit&#232;res pour obtenir un seul crit&#232;re.
+<p><a href="https://sceweb.sce.uhcl.edu/helm/WEBPAGES-SoftwareDesignPatterns/myfiles/TableContents/Module-10/design_patterns__filter_pattern.html" target="_blank"><span class=l>~</span>&nbsp;https://sceweb.sce.uhcl.edu/helm/WEBPAGES-SoftwareDesignPatterns/myfiles/TableContents/Module-10/design_patterns__filter_pattern.html
+</a>
+<p>Criteria patterrn
+<ul><li><a href="https://github.com/CodelyTV/cqrs-ddd-php-example/tree/master/src/Shared/Domain/Criteria" target="_blank"><span class=l>~</span>&nbsp;https://github.com/CodelyTV/cqrs-ddd-php-example/tree/master/src/Shared/Domain/Criteria
+</a>
+
+</li>
+
+</ul><p>Specification pattern
+<ul><li>&#xa;    <p>&#xa;      <img width="500" height="150" src="Cours d'architecture des logiciels_9101987877164457052.jpeg" >&#xa;    </p>&#xa;  
+<ul><li><a href="https://designpatternsphp.readthedocs.io/en/latest/Behavioral/Specification/README.html" target="_blank"><span class=l>~</span>&nbsp;https://designpatternsphp.readthedocs.io/en/latest/Behavioral/Specification/README.html
+</a>
+
+</li>
+
+</ul></li>
+</ul><p>Example
+</li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Services d'infrastructure</span>
+<ul><li>Aspects &#224;&nbsp;prendre en compte :
+<ul><li><p>Les particularit&#233;s de chaque adaptateur/impl&#233;mentation de nos interfaces
+<br>
+nous les pr&#233;ciserons par injection via le constructeur
+<ul><li>Exemples 
+<ul><li>Connexion aux bases de donn&#233;es dans les r&#233;f&#233;rentiels
+
+</li>
+<li>Identifiants de l'exp&#233;diteur et du SMTP dans le service de notification par courriel.
+
+</li>
+<li>Canal et cl&#233; API dans le service de notification via Slack
+
+</li>
+
+</ul>
+</li>
+
+</ul><p> Nous emp&#234;chons le couplage structurel dans nos interfaces 
+<br>
+en &#233;vitant d'utiliser les concepts, la logique ou le flux een rapport avec nos impl&#233;mentations.
+<ul><li>Exemples 
+
+</li>
+
+</ul><p>Nous utiliserons de fausses impl&#233;mentations de services pour effectuer nos tests.
+<ul><li>Exemples 
+<ul><li>Bases de donn&#233;es en memoire 
+
+</li>
+<li>service de notification par courriel.
+
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Organisation du code source
+<ul><li><p><a href="https://medium.com/steve-cruz/domain-driven-design-ddd-file-structure-ade7fb26553d" target="_blank"><span class=l>~</span>&nbsp;https://medium.com/steve-cruz/domain-driven-design-ddd-file-structure-ade7fb26553d
+</a>
+<p><a href="https://grafikart.fr/blog/structure-code-symfony" target="_blank"><span class=l>~</span>&nbsp;https://grafikart.fr/blog/structure-code-symfony
+</a>
+<p>Une bonne mani&#232;re de construire la structure
+<br>
+de notre projet est d'isoler les &#233;l&#233;ments en 
+<br>
+fonction de leur domaine, en utilisant des
+<br>
+modules.
+<ul><li>Exemples
+<ul><li>&#xa;    <p>&#xa;      Les services relatifs aux utilisateurs&#xa;    </p>&#xa;    <p>&#xa;      doivent tous faire partie du &quot;User Domain&quot;&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <ul>&#xa;      <li>&#xa;        Authenticate User Service,&#xa;      </li>&#xa;      <li>&#xa;        Create Appointment Service,&#xa;      </li>&#xa;      <li>&#xa;        Create User Service,&#xa;      </li>&#xa;      <li>&#xa;        Update User Avatar Service&#xa;      </li>&#xa;    </ul>&#xa;  
+</li>
+</ul>&#xa;    <p>&#xa;      &quot;Appointment Domain&quot; qui devrait uniquement&#xa;    </p>&#xa;    <p>&#xa;      s'occuper de la logique commerciale li&#233;e aux&#xa;    </p>&#xa;    <p>&#xa;      rendez-vous&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <ul>&#xa;      <li>&#xa;        create appointments&#xa;      </li>&#xa;      <li>&#xa;        list appointments&#xa;      </li>&#xa;      <li>&#xa;        check available appointments&#xa;      </li>&#xa;      <li>&#xa;        cancel appointments&#xa;      </li>&#xa;    </ul>&#xa;  
+</li>
+</ul></li>
+</ul>
+</li>
+
+</ul><p>Structure du r&#233;pertoire
+<ul><li>Les applications Symfony ont la structure de r&#233;pertoire par d&#233;faut suivante
+<ul><li><p>Cette structure (MVC) regroupe les classes en fonction de leur r&#244;le.
+<p>C'est tr&#232;s bien pour les petits projets, mais pour les projets de taille moyenne &#224;&nbsp;grande, nous nous retrouvons avec des dossiers qui contiennent trop de fichiers, ce qui rend difficile l'isolation de tous les fichiers qui concernent une seule fonctionnalit&#233;.
+&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">your_project/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; assets/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; bin/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9492;&#9472; console<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; config/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; packages/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9492;&#9472; services.yaml<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; migrations/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; public/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; build/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9492;&#9472; index.php<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; src/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; Kernel.php<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; Command/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; Controller/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; DataFixtures/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; Entity/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; EventSubscriber/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; Form/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; Repository/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; Security/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9492;&#9472; Twig/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; templates/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; tests/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; translations/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9500;&#9472; var/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9500;&#9472; cache/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9474;&#160; &#9492;&#9472; log/<o p="#DEFAULT" style="line-height: 107%"></o></font>&#xa;    </p>&#xa;    <p class="MsoNormal">&#xa;      <font size="10.0pt" face="Courier New">&#9492;&#9472; vendor/</font><o p="#DEFAULT"></o>&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>Structure bas&#233;e sur le domaine :
+<ul><li><p>Motivation :
+<ul><li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Coh&#233;sion et facilit&#233; &#224;&nbsp;trouver ce que l'on cherche :</span>
+<ul><li><p>L'application refl&#232;te les concepts du domaine plut&#244;t que les concepts li&#233;s &#224;&nbsp;l'architecture du logiciel. Cela rend plus visible notre domaine, ce qui permet de trouver plus facilement ce que nous recherches.
+<p>Les concepts li&#233;s au m&#234;me module sont plus proches les uns des autres. Il est ainsi plus facile de passer d'un composant &#224;&nbsp;l'autre pour effectuer des modifications.
+</li>
+</ul>
+</li>
+<li><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Extensibilit&#233;/maintenabilit&#233; du code</span>
+<ul><li><p>L'une des principales raisons de s&#233;parer votre application en modules ou sous-domaines est de favoriser la maintenabilit&#233; de l'application dans le temps. Par cons&#233;quent, il peut &#234;tre judicieux de chercher &#224;&nbsp;isoler les diff&#233;rents modules de notre application. Comme il s'agit d'unit&#233;s atomiques (chaque dossier de module + dossier partag&#233; contient tout ce qui est n&#233;cessaire &#224;&nbsp;son fonctionnement), cela devient plus facile.
+<p>Nous pouvons augmenter l'isolement entre les modules par le moyen d'un "bus de commande" et d'un "bus de requ&#234;te", comme le montre le pattern CQRS. Ainsi, les modules ne se connaissent pas (nous ne pourrions pas utiliser le r&#233;f&#233;rentiel du module vid&#233;o &#224;&nbsp;partir du module utilisateur, par exemple). La communication se ferait par le canal du bus.
+<ul><li><p>Cela faciliterait une &#233;ventuelle promotion des modules vers le contexte d&#233;limit&#233;, des services isol&#233;s ou la division des modules au cas o&#249; l'un d'entre eux commencerait &#224;&nbsp;se d&#233;velopper fortement.
+</li>
+</ul></li>
+</ul>
+</li>
+
+</ul><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">&#xa;    <p>&#xa;      Faire appara&#238;tre les concepts de notre syst&#232;me au premier niveau de la hi&#233;rarchie.&#xa;    </p>&#xa;  </span>
+<ul><li><p>Il s'agit d'un point important car il implique de 
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;changer la hi&#233;rarchie traditionnelle des r&#233;pertoires o&#249; nous regroupons le code par r&#244;le, 
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maintenant nous regrouperons le code par les concepts de notre application.
+</li>
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Modules ou sous-domaines</span>
+<ul><li><p>Les modules sont des regroupements de code bas&#233;s sur les principaux concepts de notre application. Par exemple, le module vid&#233;o et le module utilisateur. Dans ces modules, nous regrouperons chacun des cas d'utilisation respectifs, les concepts de domaine et l'infrastructure connexe.
+</li>
+</ul><p>Dans cette hi&#233;rarchie, 
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nous s&#233;parons chaque contexte de notre application en modules, 
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dans chaque module de notre application nous avons 3 dossiers, 
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;un pour chaque couche de notre architecture:
+<br>
+		- Infrastructure
+<br>
+		- Application
+<br>
+		- Domain
+<ul><li>&#xa;    <img src="Cours d'architecture des logiciels_8873810354668479502.jpeg" >&#xa;  
+<p>Selon le diagramme dans "Qu'est-ce que l'architecture hexagonale" :
+<ul><li>&#xa;    <img src="Cours d'architecture des logiciels_6237818050664566594.jpeg" >&#xa;  
+</li>
+</ul></li>
+</ul><p><span style="font-family: SansSerif, sans-serif; font-weight: bold; ">Que faisons-nous des aspects partag&#233;s entre les diff&#233;rents modules ?</span>
+<ul><li><p>Ce que nous pouvons faire, c'est le placer dans un module "partag&#233;" :
+<p>Nous partons du principe que tous les diff&#233;rents modules de notre application auront acc&#232;s &#224;&nbsp;ce module partag&#233;. Ainsi, si nous exportons un module vers un service externe, nous devrons &#233;galement emporter la partie partag&#233;e du module avec nous.
+<p>
+<br>
+
+<ul><li>Infrastructures partag&#233;es
+<ul><li>Ex : configuration de la base de donn&#233;es, connexion &#224;&nbsp;la base de donn&#233;es.
+
+</li>
+
+</ul>
+</li>
+<li>Domaine partag&#233;
+<ul><li><p>Un autre concept que nous partagerons entre les modules sera les Value Objects qui mod&#233;lisent par exemple les identifiants de nos entit&#233;s.
+<p>Par exemple, une vid&#233;o peut contenir l'identifiant de l'utilisateur qui l'a publi&#233;e. Ainsi, puisque le moyen de relier une entit&#233; d'un module &#224;&nbsp;une autre entit&#233; d'un module diff&#233;rent passe par cet identifiant et non par une relation d'association pour &#233;viter le couplage, nous n'avons pas d'autre choix que de partager le UserId entre les deux modules.
+</li>
+</ul>
+</li>
+
+</ul></li>
+</ul><p>la hi&#233;rarchie de r&#233;pertoires est la suivante 
+<ul><li>&#xa;    <p>&#xa;      your_project&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;apps&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;backend&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;bin&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Entry point&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;config&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Framework Configuration&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;routes&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;services&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;public&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Controller&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Entry point&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;HealthCheck&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;frontend&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;...&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Controller&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Entry point&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;HealthCheck&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Home&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;templates&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Views&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;pages&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;partials&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;partials&#xa;    </p>&#xa;    <p>&#xa;      ...&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;src&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel(Core)&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Backoffice&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Context&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Auth&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Use cases&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Authenticate&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Model : ValueObjects, Entities&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Persistence Interfaces&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Create&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;SearchAll&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;SearchByCriteria&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Shared among modules&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Symfony&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;DependencyInjection&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Mooc&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Context&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Create&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Find&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Update&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Eloquent&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;CoursesCounter&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Find&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Increment&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Shared&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Shared among modules&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Course&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Symfony&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;DependencyInjection&#xa;    </p>&#xa;    <p>&#xa;      ...&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Shares among Contexts&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Aggregate&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Bus&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Event&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Query&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Criteria&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;ValueObject&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Bus&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Event&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;InMemory&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;MySql&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;RabbitMq&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Query&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Dbal&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Elasticsearch&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Logger&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Elasticsearch&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Symfony&#xa;    </p>&#xa;    <p>&#xa;      &#9492;&#9472;&#9472;&#9472;tests&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Test&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;apps&#xa;    </p>&#xa;    <p>&#xa;      ...&#xa;    </p>&#xa;  
+</li>
+</ul><p>&nbsp;
+<p>Structure et Exemple
+<ul><li>&nbsp;
+
+</li>
+<li>&nbsp;
+<ul><li>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;Entrypoints&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;Kernel&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Context&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Context&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9492;&#9472;&#9472;&#9472;test&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Entrypoints&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Kernel&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Context&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Context&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>&#xa;    <p>&#xa;      Full Example&#xa;    </p>&#xa;  
+<ul><li>&#xa;    <p>&#xa;      php_ddd_example&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;apps&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;backoffice&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;backend&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;bin&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;config&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;routes&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;services&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;public&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Controller&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;HealthCheck&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;frontend&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;bin&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;config&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;routes&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;services&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;public&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;images&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Controller&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;HealthCheck&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Home&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;templates&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;pages&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;partials&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;partials&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;mooc&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;backend&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;bin&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;build&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;supervisor&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;config&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;routes&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;services&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;public&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;DomainEvents&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;MySql&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;RabbitMq&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Controller&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;CoursesCounter&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;HealthCheck&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;frontend&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;databases&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;backoffice&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;doc&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;endpoints&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;etc&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;nginx&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;php&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;conf.d&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Analytics&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;DomainEvents&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Store&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Backoffice&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Auth&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Authenticate&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Create&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;SearchAll&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;SearchByCriteria&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Symfony&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;DependencyInjection&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Mooc&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Create&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Find&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Update&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Eloquent&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;CoursesCounter&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Find&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Increment&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Notifications&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;SendNewCommentReplyEmail&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;SendNewCommentReplyPush&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;SendResetPasswordEmail&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Course&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Symfony&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;DependencyInjection&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Videos&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Retention&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Campaign&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;NewCourseAvailable&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Schedule&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Trigger&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;WelcomeUser&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Trigger&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Email&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;SendNewCourseAvailable&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;SendWelcomeUser&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Push&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;SendNewCourseAvailable&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Sms&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Aggregate&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Bus&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Event&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Query&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Criteria&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;ValueObject&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Bus&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Event&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;InMemory&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;MySql&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;RabbitMq&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Query&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Dbal&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Elasticsearch&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Logger&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Elasticsearch&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Symfony&#xa;    </p>&#xa;    <p>&#xa;      &#9492;&#9472;&#9472;&#9472;tests&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;apps&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;backoffice&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;backend&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;frontend&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;mooc&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;backend&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;features&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;courses&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;courses_counter&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;health_check&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;frontend&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;src&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Backoffice&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Auth&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Authenticate&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Mooc&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Courses&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Create&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Update&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Persistence&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;CoursesCounter&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Find&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Increment&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;PhpUnit&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Videos&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Criteria&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Arranger&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Behat&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Bus&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Command&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Event&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;MySql&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;RabbitMq&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Query&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Doctrine&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Mink&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Mockery&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;PhpUnit&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Comparator&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Constraint&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+<li>&nbsp;
+<ul><li>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;Entrypoints&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#9500;&#9472;&#9472;&#9472;Kernel&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Context&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Context&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Module&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Shared&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Application&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Domain&#xa;    </p>&#xa;    <p>&#xa;      &#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Infrastructure&#xa;    </p>&#xa;    <p>&#xa;      &#9492;&#9472;&#9472;&#9472;test&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Entrypoints&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9500;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;App&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9500;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9474;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Sub-module&#xa;    </p>&#xa;    <p>&#xa;      &#160;&#160;&#160;&#160;&#9492;&#9472;&#9472;&#9472;Kernel&#xa;    </p>&#xa;    <p>&#xa;      ...&#xa;    </p>&#xa;  
+</li>
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul><p>Bounded Context
+<p>Ubiquitous Language
+</li>
+</ul>
+</li>
+<li>&nbsp;
+<ul><li>Quelle est la diff&#233;rence entre un service d'application et un service de domaine ?
+
+</li>
+<li>Comment mod&#233;liser mon domaine ?
+
+</li>
+<li>De quoi et comment dois-je extraire les interfaces ?
+
+</li>
+<li>Comment cela affecte-t-il mes tests ?
+
+</li>
+
+</ul>
+</li>
+
+</ul><p>CQRS
+<p>Event-Driven Architecture
+<p>Communication entre les microservices : Event-Driven Architecture
+<p>Domain-Driven Design appliqu&#233;e
+<p>Tests : Introduction et bonnes pratiques
+<p>DDD en PHP
+<p>Symfony maintenable et extensible
+<p>CQRS+Event Sourcing
+<p>Bonnes pratiques BDD avec Gherkin (Cucumber, Behat...)
+<p>eXtreme Programming
+<p>Refactoring Code Smells to Clean Code : 
+<ul><li>Bloaters
+
+</li>
+<li>Change Preventers
+
+</li>
+
+</ul>&#xa;    <p style="text-align: center">&#xa;      <font face="SansSerif" size="3">Patrons de cr&#233;ation </font>&#xa;    </p>&#xa;    <p class="title" style="text-align: center">&#xa;      <font face="SansSerif" size="3">Creational Design Patterns</font>&#xa;    </p>&#xa;  
+&#xa;    <p>&#xa;      Patrons comportementaux&#xa;    </p>&#xa;    <p>&#xa;      Behavioral Design Patterns&#xa;    </p>&#xa;  
+<p>Git : Introduction et travail d'&#233;quipe
+<p>Reference:
+<ul><li>&#xa;    <p>&#xa;      <img width="40" height="50" src="resources/0131177052.01._SCLZZZZZZZ_SX500_.jpg" >&#xa;    </p>&#xa;  
+<p>Testing and Refactoring Legacy Code
+<ul><li><a href="https://youtu.be/LSqbXorkyfQ" target="_blank"><span class=l>~</span>&nbsp;https://youtu.be/LSqbXorkyfQ
+</a>
+
+</li>
+
+</ul><p>From STUPID to SOLID Code!
+<ul><li><a href="https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/" target="_blank"><span class=l>~</span>&nbsp;https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/
+</a>
+
+</li>
+
+</ul><p><a href="resources/coursUML.pdf" target="_blank"><span class=l>~</span>&nbsp;Cours UML
+</a>
+<p>Clear Architecture (Robert C. Martin) 
+<p>Refactoring (Martin flower)
+<p>Clean Code(Robert C. Martin)
+<p>Tweet sur la sym&#233;trie dans le code
+<ul><li><a href="https://twitter.com/gonedark/status/936275444420268032" target="_blank"><span class=l>~</span>&nbsp;https://twitter.com/gonedark/status/936275444420268032
+</a>
+<ul><li><p>Jason McCreary &#55356;&#57275;&nbsp;@gonedark &#55357;&#56613;&nbsp;
+<br>
+
+<br>
+Symmetry is a hallmark of clean code. Symmetrical code is not only easy to read, but also predictable. Here are a few areas to check your code for symmetry.
+</li>
+</ul>
+</li>
+
+</ul><p><a href="resources/NOSilverBullet.pdf" target="_blank"><span class=l>~</span>&nbsp;Complexit&#233; accidentelle vs. complexit&#233; essentielle (paper)
+</a>
+<ul><li><p><a href="https://en.wikipedia.org/wiki/No_Silver_Bullet" target="_blank"><span class=l>~</span>&nbsp;https://en.wikipedia.org/wiki/No_Silver_Bullet
+</a>
+&#xa;    <p>&#xa;      <img width="10%" height="100%" src="Cours d'architecture des logiciels_3150823667653263637.jpeg" >&#xa;    </p>&#xa;  
+&#xa;    <img src="Cours d'architecture des logiciels_7741707235301215314.jpeg" >&#xa;  
+&#xa;    <img src="Cours d'architecture des logiciels_8369765961701010074.jpeg" >&#xa;  
+</li>
+</ul><p>Does TDD really lead to good design?
+<ul><li><a href="https://www.codurance.com/publications/2015/05/12/does-tdd-lead-to-good-design" target="_blank"><span class=l>~</span>&nbsp;https://www.codurance.com/publications/2015/05/12/does-tdd-lead-to-good-design
+</a>
+
+</li>
+
+</ul><p>&nbsp;
+<ul><li>Hexagonal architecture por Alistair Cockburn
+<ul><li><a href="http://alistair.cockburn.us/Hexagonal+architecture" target="_blank"><span class=l>~</span>&nbsp;alistair.cockburn.us &gt; Hexagonal+architecture
+</a>
+
+</li>
+
+</ul>
+</li>
+<li>Hexagonal Architecture por Chris Fidao
+<ul><li><a href="http://fideloper.com/hexagonal-architecture" target="_blank"><span class=l>~</span>&nbsp;fideloper.com &gt; Hexagonal-architecture
+</a>
+
+</li>
+
+</ul>
+</li>
+<li>The Clean Architecture por Uncle Bob
+<ul><li><a href="https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html" target="_blank"><span class=l>~</span>&nbsp;https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
+</a>
+
+</li>
+
+</ul>
+</li>
+<li>Hexagonal architecture in PHP
+<ul><li><a href="https://es.slideshare.net/profpv/hexagonal-architecture-in-php" target="_blank"><span class=l>~</span>&nbsp;https://es.slideshare.net/profpv/hexagonal-architecture-in-php
+</a>
+
+</li>
+
+</ul>
+</li>
+
+</ul><p><a href="resources/GUIA%20ARQUITECTURA%20HEXAGONAL.pdf" target="_blank"><span class=l>~</span>&nbsp;&nbsp;
+</a>
+<p>https://thepowerups-learning.com/regla-de-la-dependencia
+<ul><li><a href="https://thepowerups-learning.com/regla-de-la-dependencia/" target="_blank"><span class=l>~</span>&nbsp;https://thepowerups-learning.com/regla-de-la-dependencia/
+</a>
+
+</li>
+
+</ul></li>
+</ul></li>
+</ul></body>
+</html>

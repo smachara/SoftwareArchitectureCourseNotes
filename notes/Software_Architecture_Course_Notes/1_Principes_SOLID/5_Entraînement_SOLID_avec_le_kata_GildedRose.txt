@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-24T00:44:43+02:00
+
+====== 5 Entraînement SOLID avec le kata GildedRose ======
+Creado miércoles 24 agosto 2022
+	<https://kata-log.rocks/gilded-rose-kata>

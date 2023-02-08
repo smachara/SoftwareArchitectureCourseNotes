@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-24T00:44:26+02:00
+
+====== 4 Beneficios de la composición sobre herencia ======
+Creado miércoles 24 agosto 2022
+
+	<https://github.com/CodelyTV/cqrs-ddd-php-example/blob/master/src/Mooc/Videos/Application/Create/VideoCreator.php>
+	Como en el caso de nuestro VideoCreator, siempre que tengamos una dependencia y la estemos inyectando, hablaríamos de composición. Es decir, estamos compartiendo comportamiento a través de la composición.
+	El beneficio que nos ofrece inyectar estas dependencias es que a nivel de Testing podremos ‘falsearlas’ para evitar usar las reales que usaríamos en producción. Si por el contrario queremos testear una clase que herede de otra, nos estaríamos tragando inevitablemente la clase padre (Y por consiguiente tendríamos que testear la clase padre en todos sus hijos).
+		Vamo a calmarno
+			Usamos la herencia sólo cuando sea indispensable
+		Herencia para pocos modelos
+		final por defecto
+			Definiendo una clase como final evitamos que pueda extender

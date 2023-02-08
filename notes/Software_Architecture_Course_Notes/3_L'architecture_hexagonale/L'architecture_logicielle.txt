@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-08-24T00:48:05+02:00
+
+====== L'architecture logicielle ======
+Creado miércoles 24 agosto 2022
+		Il désigne la structure, le fonctionnement et l'interaction  entre les parties du logiciel.
+			définit de manière abstraite, les composants qui exécutent une certaine tâche informatique, leurs interfaces et la communication entre eux.
+			constitue un ensemble de modèles et d'abstractions cohérents qui fournissent un cadre clair et défini pour interagir avec le code source du logiciel.
+			constitue un ensemble de modèles et d'abstractions  cohérents  qui fournissent un cadre clair et défini pour interagir avec le code source du logiciel.
+		Une architecture logicielle est sélectionnée et conçue en fonction des  objectifs (exigences) et des contraintes.
+			Les objectifs sont ceux préétablis pour le système d'information, mais pas seulement les objectifs fonctionnels, mais aussi d'autres objectifs tels que la maintenabilité, l'testabilité, la flexibilité et l'interaction avec d'autres systèmes d'information.
+				la maintenabilité,
+					symplicité
+				l'testabilité,
+				la flexibilité
+					extensibilité
+				l'interaction avec d'autres systèmes d'information.
+			Les contraintes sont celles qui découlent des technologies  disponibles pour mettre en œuvre les systèmes d'information.
